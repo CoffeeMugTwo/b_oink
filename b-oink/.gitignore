@@ -1,3 +1,21 @@
-# Godot 4+ specific ignores
+# Godot-specific
+.import/
+.export/
+mono/
+.data/
 .godot/
 /android/
+
+# System / editor
+*.tmp
+*.log
+*.import
+*.translation
+*.cfg
+*.vs/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
