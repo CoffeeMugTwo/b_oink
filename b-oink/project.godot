@@ -11,12 +11,15 @@ config_version=5
 [application]
 
 config/name="b_oink"
-run/main_scene="uid://bjyep4puhj11h"
+run/main_scene="res://Scenes/TEst_Art.tscn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<< HEAD
+=======
+<<<<<<<HEADrun/main_scene="uid://c12rwdhvobuir"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/stretch/mode="canvas_items"
+>>>>>>> 8441886619e92b4a96e0956cfb5ad1b4fe2ef1fd
