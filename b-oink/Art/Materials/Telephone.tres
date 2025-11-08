@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://djqjff328c6b6"]
+
+[ext_resource type="Texture2D" uid="uid://ch3hp42cjfj1d" path="res://Art/Textures/Telephone/Telephone_LP_DefaultMaterial_BaseColor.png" id="1_3uhk1"]
+[ext_resource type="Texture2D" uid="uid://wejud4fgrds" path="res://Art/Textures/Telephone/Telephone_LP_DefaultMaterial_Metallic.png" id="2_61ijt"]
+[ext_resource type="Texture2D" uid="uid://b7bd27bvbwcd" path="res://Art/Textures/Telephone/Telephone_LP_DefaultMaterial_Normal.png" id="3_rv8ig"]
+[ext_resource type="Texture2D" uid="uid://dfekjkx3h61ef" path="res://Art/Textures/Telephone/Telephone_LP_DefaultMaterial_Roughness.png" id="4_awafk"]
+
+[resource]
+albedo_texture = ExtResource("1_3uhk1")
+metallic = 1.0
+metallic_texture = ExtResource("2_61ijt")
+roughness_texture = ExtResource("4_awafk")
+normal_enabled = true
+normal_texture = ExtResource("3_rv8ig")
