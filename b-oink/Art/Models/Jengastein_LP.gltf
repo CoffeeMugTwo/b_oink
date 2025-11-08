@@ -1,0 +1,164 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 26,
+            "type": "VEC3",
+            "max": [
+                2.499999761581421,
+                0.9999999403953552,
+                0.49999988079071047
+            ],
+            "min": [
+                -0.4999999403953552,
+                0.0,
+                -0.5000001192092896
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 26,
+            "type": "VEC3",
+            "max": [
+                0.8173622488975525,
+                0.8989468216896057,
+                0.8989468216896057
+            ],
+            "min": [
+                -0.8173622488975525,
+                -0.8989468216896057,
+                -0.8989468216896057
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 26,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9099559783935547,
+                -0.9269608855247498,
+                -0.6363656520843506,
+                -0.9099559783935547
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 26,
+            "type": "VEC2",
+            "max": [
+                0.9989998936653137,
+                0.9990000128746033
+            ],
+            "min": [
+                0.0009999275207519532,
+                0.044581592082977298
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 132,
+            "type": "SCALAR",
+            "max": [
+                25.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 1512,
+            "uri": "Jengastein_LP.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 312,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 312,
+            "byteLength": 312,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 624,
+            "byteLength": 416,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1040,
+            "byteLength": 208,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1248,
+            "byteLength": 264,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.011",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Jengastein_LP",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://5nkgfd1j27yt"]
+
+[ext_resource type="Texture2D" uid="uid://dd5vhgiphbghd" path="res://Art/Textures/Buchstabenklotz/Buchstabenklotz_LP_DefaultMaterial_BaseMap.png" id="1_yjrxq"]
+[ext_resource type="Texture2D" uid="uid://br7p57cp0xg67" path="res://Art/Textures/Buchstabenklotz/Buchstabenklotz_LP_DefaultMaterial_Normal.png" id="2_l2dse"]
+[ext_resource type="Texture2D" uid="uid://bleleygo018v" path="res://Art/Textures/Buchstabenklotz/Buchstabenklotz_LP_DefaultMaterial_MaskMap.png" id="3_d3j4x"]
+
+[resource]
+albedo_texture = ExtResource("1_yjrxq")
+orm_texture = ExtResource("3_d3j4x")
+normal_enabled = true
+normal_texture = ExtResource("2_l2dse")
