@@ -1,15 +1,17 @@
-[gd_scene load_steps=16 format=3 uid="uid://cwq6hmbt6f1gj"]
+[gd_scene load_steps=18 format=3 uid="uid://cwq6hmbt6f1gj"]
 
 [ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_0rqgs"]
+[ext_resource type="Material" uid="uid://btqfsmymufd3b" path="res://Art/Materials/Wood_Bar_straight.tres" id="2_0rqgs"]
 [ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_icgjy"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_l0hd3"]
 [ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_d5oxj"]
 [ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="7_1dj0o"]
 [ext_resource type="PackedScene" uid="uid://5f7urs658fxh" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_green.tscn" id="8_5f2ua"]
 [ext_resource type="PackedScene" uid="uid://bsn5fg5jp2na6" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_yellow.tscn" id="9_p5ob5"]
-[ext_resource type="PackedScene" uid="uid://np32nhxcl8ql" path="res://Scenes/characters.tscn" id="10_1jowa"]
+[ext_resource type="PackedScene" uid="uid://u28a0yy4v4c2" path="res://Art/Models/B-Oink!_Luggage_LP_.fbx" id="10_icgjy"]
 [ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_wcdqp"]
-[ext_resource type="PackedScene" uid="uid://u28a0yy4v4c2" path="res://Art/Models/B-Oink!_Luggage_LP_.fbx" id="11_8a0ub"]
+[ext_resource type="PackedScene" uid="uid://cx2orq7ptvcx1" path="res://Scenes/workbench/spring_test_code.tscn" id="11_l0hd3"]
+[ext_resource type="AudioStream" uid="uid://o6rwhgeigip6" path="res://Musik/B_oink3.mp3" id="12_icgjy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -29,6 +31,9 @@ radius = 0.5332031
 
 [node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
+
+[node name="Bar_Straight_LP" parent="RoomEdge/B-Oink!_Bar_Straight_wood_LP" index="0"]
+surface_material_override/0 = ExtResource("2_0rqgs")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge"]
 transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0, 0, 3, -0.02208212, 0.0740999, -0.08552614)
@@ -458,10 +463,17 @@ shape = SubResource("BoxShape3D_q2d71")
 [node name="B-Oink!_Buldingblock_cube_LP" parent="Block8" instance=ExtResource("7_1dj0o")]
 transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="Lagguage" type="StaticBody3D" parent="."]
 
-[node name="Luggage_LP_cd" parent="StaticBody3D" instance=ExtResource("11_8a0ub")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 22.298285, 0, 0)
+[node name="B-Oink!_Luggage_LP_" parent="Lagguage" instance=ExtResource("10_icgjy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.657364, 0.57459736, 0)
 
-[node name="Characters" parent="." instance=ExtResource("10_1jowa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.627081, 0.15780652, 0)
+[node name="spring_engine_code_test" parent="." instance=ExtResource("11_l0hd3")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4.257451, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_icgjy")
+autoplay = true
+parameters/looping = true
+
+[editable path="RoomEdge/B-Oink!_Bar_Straight_wood_LP"]
