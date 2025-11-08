@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://btqfsmymufd3b"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://btqfsmymufd3b"]
+
+[ext_resource type="Texture2D" uid="uid://bq4pi3lmo44od" path="res://Art/Textures/Wood_Bar_Texture/B-Oink!_Bar_Straight_wood_LP_DefaultMaterial_BaseMap.png" id="1_l1qwo"]
+[ext_resource type="Texture2D" uid="uid://lqq5trl7ftw0" path="res://Art/Textures/Wood_Bar_Texture/B-Oink!_Bar_Straight_wood_LP_DefaultMaterial_Normal.png" id="2_vwktc"]
+[ext_resource type="Texture2D" uid="uid://tkbmqvkjqj2i" path="res://Art/Textures/Wood_Bar_Texture/B-Oink!_Bar_Straight_wood_LP_DefaultMaterial_MaskMap.png" id="3_700ej"]
 
 [resource]
+albedo_texture = ExtResource("1_l1qwo")
+orm_texture = ExtResource("3_700ej")
+normal_enabled = true
+normal_texture = ExtResource("2_vwktc")
