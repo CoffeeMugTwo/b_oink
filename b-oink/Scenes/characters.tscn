@@ -1,7 +1,15 @@
-[gd_scene format=3 uid="uid://np32nhxcl8ql"]
+[gd_scene load_steps=2 format=3 uid="uid://np32nhxcl8ql"]
+
+[ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="1_uwqtg"]
 
 [node name="Characters" type="Node3D"]
 
-[node name="PlayerBack" type="CharacterBody3D" parent="."]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 
-[node name="PlayerHead" type="CharacterBody3D" parent="."]
+[node name="B-Oink!_Char_LP_back_v2" parent="CharacterBody3D" instance=ExtResource("1_uwqtg")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+
+[node name="CharacterBody3D2" type="CharacterBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D2"]
