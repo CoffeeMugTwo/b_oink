@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_j0p05"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_5nsto"]
 [ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_gjpho"]
-[ext_resource type="Script" uid="uid://mmq4v4vie2wl" path="res://Scenes/character_body_3d.gd" id="5_45d1s"]
+[ext_resource type="Script" uid="uid://mmq4v4vie2wl" path="res://Scripts/character_body_3d.gd" id="5_45d1s"]
 [ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="5_p70al"]
 [ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="7_y7y61"]
 [ext_resource type="PackedScene" uid="uid://5f7urs658fxh" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_green.tscn" id="8_kn06e"]
