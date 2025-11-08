@@ -79,7 +79,7 @@ shape = SubResource("BoxShape3D_5nsto")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.997239, 0, 0)
 
 [node name="B-Oink!_Floor_boards" parent="Floor2" instance=ExtResource("2_j0p05")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
+transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2"]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.261, -0.467, 0)
@@ -99,24 +99,24 @@ shape = SubResource("BoxShape3D_gjpho")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.999666, 0, 0)
 
 [node name="B-Oink!_Floor_boards" parent="Floor4" instance=ExtResource("2_j0p05")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 4.5896626, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor4"]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.261, -0.467, 0)
 shape = SubResource("BoxShape3D_gjpho")
 
 [node name="Floor5" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1921606, -4.7683716e-07, 8.005444)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021961212, -4.7683716e-07, 8.005444)
 
 [node name="B-Oink!_Floor_boards" parent="Floor5" instance=ExtResource("2_j0p05")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
+transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, 4.5896616, 1.1920929e-07, -0.0101799965)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor5"]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.261, -0.467, 0)
 shape = SubResource("BoxShape3D_gjpho")
 
 [node name="Floor6" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8050785, -4.7683716e-07, 8.005444)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0192, -4.7683716e-07, 8.005444)
 
 [node name="B-Oink!_Floor_boards" parent="Floor6" instance=ExtResource("2_j0p05")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
@@ -126,7 +126,7 @@ transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.260568, -0.46659815, 0)
 shape = SubResource("BoxShape3D_gjpho")
 
 [node name="Floor7" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.805448, -4.7683716e-07, 8.005444)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.01957, -4.7683716e-07, 8.005444)
 
 [node name="B-Oink!_Floor_boards" parent="Floor7" instance=ExtResource("2_j0p05")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
@@ -136,7 +136,7 @@ transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.261, -0.467, 0)
 shape = SubResource("BoxShape3D_gjpho")
 
 [node name="Floor8" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.807505, -4.7683716e-07, 8.005444)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.021626, -4.7683716e-07, 8.005444)
 
 [node name="B-Oink!_Floor_boards" parent="Floor8" instance=ExtResource("2_j0p05")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)

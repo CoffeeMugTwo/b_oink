@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://bjm6f2dg62hk"]
+
+[ext_resource type="Texture2D" uid="uid://cb56s7b0wii1p" path="res://Art/Textures/Domino_Texture/B-Oink!_Domino_LP_DefaultMaterial_BaseMap.png" id="1_ufp2e"]
+[ext_resource type="Texture2D" uid="uid://nygb5si7h7y7" path="res://Art/Textures/Domino_Texture/B-Oink!_Domino_LP_DefaultMaterial_Normal.png" id="2_v887f"]
+[ext_resource type="Texture2D" uid="uid://dmfx2m1u6qhla" path="res://Art/Textures/Domino_Texture/B-Oink!_Domino_LP_DefaultMaterial_MaskMap.png" id="3_havss"]
+
+[resource]
+albedo_texture = ExtResource("1_ufp2e")
+orm_texture = ExtResource("3_havss")
+normal_enabled = true
+normal_texture = ExtResource("2_v887f")
