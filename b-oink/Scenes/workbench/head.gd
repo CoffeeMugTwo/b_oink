@@ -8,7 +8,7 @@ const JUMP_VELOCITY = 4.5
 @export var max_input_force_scalar : float = 10.0
 @export var mass : float = 1.0
 @export var jump_force_scalar : float = 600
-@export var max_grab_distance : float = 0.1
+@export var max_grab_distance : float = 0.5
 
 func _can_grab() -> bool:
 	var space_state = get_world_3d().direct_space_state
