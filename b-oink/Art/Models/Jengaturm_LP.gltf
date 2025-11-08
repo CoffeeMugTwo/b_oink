@@ -1,0 +1,182 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 649,
+            "type": "VEC3",
+            "max": [
+                1.0087134838104249,
+                4.499999523162842,
+                2.5
+            ],
+            "min": [
+                -2.3333330154418947,
+                -3.499999761581421,
+                -0.5000001192092896
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 649,
+            "type": "VEC3",
+            "max": [
+                0.941504180431366,
+                0.8755753636360169,
+                0.8755753040313721
+            ],
+            "min": [
+                -0.941504180431366,
+                -0.8755753636360169,
+                -0.8755753040313721
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 649,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9872032403945923,
+                -0.9872032403945923,
+                -0.9872032403945923,
+                -0.9872032403945923
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 649,
+            "type": "VEC2",
+            "max": [
+                0.9989999532699585,
+                0.9990000128746033
+            ],
+            "min": [
+                0.000999998301267624,
+                0.052502334117889407
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 2508,
+            "type": "SCALAR",
+            "max": [
+                648.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 36168,
+            "uri": "Jengaturm_LP.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 7788,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 7788,
+            "byteLength": 7788,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 15576,
+            "byteLength": 10384,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 25960,
+            "byteLength": 5192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 31152,
+            "byteLength": 5016,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.007",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Jengaturm_LP",
+            "matrix": [
+                2.682209014892578e-7,
+                0.0,
+                -1.4999998807907105,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.9999999403953552,
+                0.0,
+                1.7881393432617188e-7,
+                0.0,
+                0.0,
+                3.5,
+                0.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

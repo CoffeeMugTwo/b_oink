@@ -25,7 +25,7 @@ b = NodePath("../butt")
 anchor_a = NodePath("../head/head_anker")
 anchor_b = NodePath("../butt/butt_anker")
 
-[node name="head" type="CharacterBody3D" parent="."]
+[node name="head" type="CharacterBody3D" parent="." groups=["players"]]
 script = ExtResource("1_josfd")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="head"]
@@ -38,7 +38,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.935, 2, 0)
 [node name="B-Oink!_Char_front" parent="head" instance=ExtResource("4_nqheu")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.22487676, 0, 0)
 
-[node name="butt" type="CharacterBody3D" parent="."]
+[node name="butt" type="CharacterBody3D" parent="." groups=["players"]]
 script = ExtResource("5_nqheu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="butt"]
