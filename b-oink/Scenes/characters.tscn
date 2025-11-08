@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://np32nhxcl8ql"]
+
+[node name="Characters" type="Node3D"]
+
+[node name="PlayerBack" type="CharacterBody3D" parent="."]
+
+[node name="PlayerHead" type="CharacterBody3D" parent="."]
