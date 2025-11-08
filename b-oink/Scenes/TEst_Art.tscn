@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://i43aut0vc512"]
+[gd_scene load_steps=12 format=3 uid="uid://i43aut0vc512"]
 
 [ext_resource type="PackedScene" uid="uid://vv065mcc2cc0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="1_wlm07"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="2_c83vi"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="6_8rpb8"]
 [ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="7_mbk0s"]
 [ext_resource type="PackedScene" uid="uid://bnb08ipuj7xgd" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="8_5i0sl"]
+[ext_resource type="PackedScene" uid="uid://dscioaeii4vhb" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="9_c83vi"]
+[ext_resource type="PackedScene" uid="uid://c1vloahd8enej" path="res://Art/Models/B-Oink!_Domino_LP.fbx" id="10_6fx8x"]
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_wlm07"]
 exposure_multiplier = 0.895
@@ -152,3 +154,12 @@ attributes = SubResource("CameraAttributesPhysical_wlm07")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.25881907, -0.4829629, 0.8365163, 0, 0.8660254, 0.50000006, -0.9659259, 0.12940954, -0.22414388, 0, 3.1581962, 5)
+
+[node name="B-Oink!_Buldingblock_bridge_LP" parent="." instance=ExtResource("9_c83vi")]
+transform = Transform3D(0.25881907, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, 0.25881907, -1, 0, 3)
+
+[node name="B-Oink!_Domino_LP" parent="." instance=ExtResource("10_6fx8x")]
+transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49999997, -1, 0, 4)
+
+[node name="B-Oink!_Domino_LP" parent="B-Oink!_Domino_LP" instance=ExtResource("10_6fx8x")]
+transform = Transform3D(0.82110924, 0.27528125, -0.49999982, 0.31786734, -0.9481351, 0, -0.47406763, -0.15893362, -0.8660254, -0.7679491, 0.35393953, 0.40192378)
