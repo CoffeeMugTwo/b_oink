@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://bhdrvt1jhitm3"]
+
+[ext_resource type="Texture2D" uid="uid://bbly2ij03i65j" path="res://Art/Textures/Jengastein/Jengastein_LP_DefaultMaterial_BaseMap.png" id="1_6yyi0"]
+[ext_resource type="Texture2D" uid="uid://t0vjmgv5bcf7" path="res://Art/Textures/Jengastein/Jengastein_LP_DefaultMaterial_Normal.png" id="2_pewl3"]
+[ext_resource type="Texture2D" uid="uid://chawc4uakd0lg" path="res://Art/Textures/Jengastein/Jengastein_LP_DefaultMaterial_MaskMap.png" id="3_3wi2k"]
+
+[resource]
+albedo_texture = ExtResource("1_6yyi0")
+orm_texture = ExtResource("3_3wi2k")
+normal_enabled = true
+normal_texture = ExtResource("2_pewl3")

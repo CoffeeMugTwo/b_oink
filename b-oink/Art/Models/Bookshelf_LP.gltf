@@ -1,0 +1,215 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1708,
+            "type": "VEC3",
+            "max": [
+                0.4089926481246948,
+                1.0,
+                2.1692118644714357
+            ],
+            "min": [
+                -0.34999996423721316,
+                -1.0,
+                0.0
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1708,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1708,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9999998807907105,
+                -0.9999996423721314,
+                -0.9999988675117493,
+                -0.9999998807907105
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1708,
+            "type": "VEC2",
+            "max": [
+                0.9876313209533691,
+                0.9999990463256836
+            ],
+            "min": [
+                0.0000010170042514801026,
+                0.0000010728836059570313
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 3636,
+            "type": "SCALAR",
+            "max": [
+                1707.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 89256,
+            "uri": "Bookshelf_LP.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 20496,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 20496,
+            "byteLength": 20496,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 40992,
+            "byteLength": 27328,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 68320,
+            "byteLength": 13664,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 81984,
+            "byteLength": 7272,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Shelf_LP",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "matrix": [
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "Shelf_LP",
+            "matrix": [
+                100.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.000016292067812173629,
+                -100.0,
+                0.0,
+                0.0,
+                100.0,
+                -0.000016292067812173629,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
