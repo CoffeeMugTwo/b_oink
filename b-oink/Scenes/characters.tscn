@@ -1,7 +1,11 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://np32nhxcl8ql"]
 
 [ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="1_uwqtg"]
+=======
+[gd_scene load_steps=0 format=3 uid="uid://np32nhxcl8ql"]
+>>>>>>> Stashed changes
 =======
 [gd_scene load_steps=0 format=3 uid="uid://np32nhxcl8ql"]
 >>>>>>> Stashed changes

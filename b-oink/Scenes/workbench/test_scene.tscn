@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://bppl1hwh1rbe6"]
+
+[ext_resource type="PackedScene" uid="uid://cx2orq7ptvcx1" path="res://Scenes/workbench/spring_test_code.tscn" id="1_xwoce"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xwoce"]
+
+[sub_resource type="Sky" id="Sky_kv0vg"]
+sky_material = SubResource("ProceduralSkyMaterial_xwoce")
+
+[sub_resource type="Environment" id="Environment_vmsth"]
+background_mode = 2
+sky = SubResource("Sky_kv0vg")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xwoce"]
+size = Vector3(76.01916, 1, 21.012207)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xwoce"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.89489543, 0.4462759, 0, -0.4462759, 0.89489543, 0, 14.771788, 19.636103)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vmsth")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.026630547, 0.99964535, 0, -0.99964535, 0.026630547, 0, 10.735176, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0586424, 0, -1.5080566)
+shape = SubResource("BoxShape3D_xwoce")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(77.08701, 0, 0, 0, 1, 0, 0, 0, 21.818615, -0.01712823, 0.034542322, 0.03407955)
+mesh = SubResource("BoxMesh_xwoce")
+
+[node name="Node3D" parent="." instance=ExtResource("1_xwoce")]

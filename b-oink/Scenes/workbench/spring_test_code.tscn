@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://cx2orq7ptvcx1"]
+
+[ext_resource type="Script" uid="uid://c03wj35u8ydyt" path="res://Scenes/workbench/spring_test_code.gd" id="1_fkjml"]
+[ext_resource type="Script" uid="uid://p8ylv0s4q3qj" path="res://Scenes/workbench/head.gd" id="1_josfd"]
+[ext_resource type="Script" uid="uid://ba0eq4fps50ha" path="res://Scenes/workbench/spring_manager_node.gd" id="2_1fw2g"]
+[ext_resource type="PackedScene" uid="uid://oxl7s76ganw8" path="res://Art/Models/B-Oink!_Char_HP.fbx" id="2_r8f0f"]
+[ext_resource type="PackedScene" uid="uid://bq1n2omlxemrl" path="res://Art/Models/B-Oink!_Char_HP_back.fbx" id="3_r8f0f"]
+[ext_resource type="Script" uid="uid://d0g2y6dik16tn" path="res://Scenes/workbench/butt_code.gd" id="5_nqheu"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fkjml"]
+height = 3.4208984
+radius = 1.6694336
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1fw2g"]
+height = 3.157959
+radius = 1.4418945
+
+[node name="spring_engine_code_test" type="Node3D"]
+script = ExtResource("1_fkjml")
+
+[node name="spring_manager" type="Node" parent="." node_paths=PackedStringArray("a", "b", "anchor_a", "anchor_b")]
+script = ExtResource("2_1fw2g")
+a = NodePath("../head")
+b = NodePath("../butt")
+anchor_a = NodePath("../head/head_anker")
+anchor_b = NodePath("../butt/butt_anker")
+
+[node name="head" type="CharacterBody3D" parent="."]
+script = ExtResource("1_josfd")
+
+[node name="B-Oink!_Char_HP" parent="head" instance=ExtResource("2_r8f0f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6401558, 0)
+shape = SubResource("CylinderShape3D_fkjml")
+
+[node name="head_anker" type="Marker3D" parent="head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.935, 2, 0)
+
+[node name="butt" type="CharacterBody3D" parent="."]
+script = ExtResource("5_nqheu")
+
+[node name="B-Oink!_Char_HP_back" parent="butt" instance=ExtResource("3_r8f0f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.263403, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="butt"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4135904, 1.6793196, 0)
+shape = SubResource("CylinderShape3D_1fw2g")
+
+[node name="butt_anker" type="Marker3D" parent="butt"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2, 2, 0)
