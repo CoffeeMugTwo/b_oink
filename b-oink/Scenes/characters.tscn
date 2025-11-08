@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://np32nhxcl8ql"]
+[gd_scene load_steps=0 format=3 uid="uid://np32nhxcl8ql"]
 
 [node name="Characters" type="Node3D"]
 
