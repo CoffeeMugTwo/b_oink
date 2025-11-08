@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsn5fg5jp2na6"]
+
+[ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="1_17epq"]
+[ext_resource type="Material" uid="uid://15egyuyeebat" path="res://Art/Materials/Building_block_cube_Yellow.tres" id="2_dehb8"]
+
+[node name="B-Oink!_Buldingblock_cube_LP" instance=ExtResource("1_17epq")]
+
+[node name="Building_Block_cube_LP" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_dehb8")
