@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="b_oink"
-run/main_scene="uid://c12rwdhvobuir"
+run/main_scene="uid://bjyep4puhj11h"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="uid://c12rwdhvobuir"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
