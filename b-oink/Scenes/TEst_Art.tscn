@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://i43aut0vc512"]
+[gd_scene load_steps=19 format=3 uid="uid://i43aut0vc512"]
 
 [ext_resource type="PackedScene" uid="uid://vv065mcc2cc0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="1_wlm07"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="2_c83vi"]
@@ -12,6 +12,11 @@
 [ext_resource type="PackedScene" uid="uid://c1vloahd8enej" path="res://Art/Models/B-Oink!_Domino_LP.fbx" id="10_6fx8x"]
 [ext_resource type="PackedScene" uid="uid://bfqvuwfrt4cut" path="res://Art/Models/Luggage_LP_cd.fbx" id="11_crea5"]
 [ext_resource type="PackedScene" uid="uid://cye25i7sbtq15" path="res://Art/Models/B-Oink!_Socket_LP.fbx" id="12_mku0s"]
+[ext_resource type="PackedScene" uid="uid://xdjn8j01vrus" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="13_8rpb8"]
+[ext_resource type="PackedScene" uid="uid://fuifpr73arbw" path="res://Art/Models/Telephone_LP.gltf" id="14_4602l"]
+[ext_resource type="PackedScene" uid="uid://c447oc57lv7cv" path="res://Art/Models/Teddy_LP.gltf" id="15_6xqq2"]
+[ext_resource type="PackedScene" uid="uid://c47fgd715y63q" path="res://Art/Models/Curtain_LP.gltf" id="16_w4myn"]
+[ext_resource type="PackedScene" uid="uid://doamt0la58ay5" path="res://Art/Models/Chair_LP.gltf" id="17_o8xbc"]
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_wlm07"]
 exposure_multiplier = 0.895
@@ -155,7 +160,7 @@ transform = Transform3D(-4.222196e-08, 0.25881907, -0.9659258, 1.131334e-08, 0.9
 attributes = SubResource("CameraAttributesPhysical_wlm07")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.25881907, -0.4829629, 0.8365163, 0, 0.8660254, 0.50000006, -0.9659259, 0.12940954, -0.22414388, 0, 3.1581962, 5)
+transform = Transform3D(-0.9659259, 0.12940946, -0.22414395, 8.230109e-09, 0.8660254, 0.5, 0.25881916, 0.48296294, -0.83651644, 0, 3.1581962, 5)
 
 [node name="B-Oink!_Buldingblock_bridge_LP" parent="." instance=ExtResource("9_c83vi")]
 transform = Transform3D(0.25881907, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, 0.25881907, -1, 0, 3)
@@ -167,7 +172,22 @@ transform = Transform3D(0.49999997, 0, 0.86602545, 0, 1, 0, -0.86602545, 0, 0.49
 transform = Transform3D(0.82110924, 0.27528125, -0.49999982, 0.31786734, -0.9481351, 0, -0.47406763, -0.15893362, -0.8660254, -0.7679491, 0.35393953, 0.40192378)
 
 [node name="Luggage_LP_cd" parent="." instance=ExtResource("11_crea5")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.8178585, 1, 7.7700524)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.2737074, 1, 7.7700524)
 
 [node name="B-Oink!_Socket_LP" parent="." instance=ExtResource("12_mku0s")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.7716109, 2, 1.5323713)
+
+[node name="B-Oink!_Book_LP" parent="." instance=ExtResource("13_8rpb8")]
+transform = Transform3D(7.406049e-09, -0.99000406, -0.14103946, 1.0750142e-07, 0.14103946, -0.99000406, 1, -7.829911e-09, 1.0747141e-07, 0.637352, 1.9825621, 4.60221)
+
+[node name="Telephone_LP" parent="." instance=ExtResource("14_4602l")]
+transform = Transform3D(-0.9905095, 0, -0.13744447, 0, 1, 0, 0.13744447, 0, -0.9905095, 0.046434164, 0, 0.854496)
+
+[node name="Teddy_LP2" parent="." instance=ExtResource("15_6xqq2")]
+transform = Transform3D(-0.86602545, 0, -0.4999999, 0, 1, 0, 0.4999999, 0, -0.86602545, -0.3315773, 1, -0.82371855)
+
+[node name="Curtain_LP2" parent="." instance=ExtResource("16_w4myn")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.5848136, 3, 8.050358)
+
+[node name="Chair_LP" parent="." instance=ExtResource("17_o8xbc")]
+transform = Transform3D(-0.9659258, 0, 0.25881913, 0, 1, 0, -0.25881913, 0, -0.9659258, -2.886403, 3, 13.430128)

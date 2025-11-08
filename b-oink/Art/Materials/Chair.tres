@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://c3sg20ck18u5c"]
+
+[ext_resource type="Texture2D" uid="uid://c6w6p6uujw0hy" path="res://Art/Textures/CHair/CHair_LP_DefaultMaterial_BaseColor.png" id="1_fu63s"]
+[ext_resource type="Texture2D" uid="uid://b8p4bbchxou7g" path="res://Art/Textures/CHair/CHair_LP_DefaultMaterial_Metallic.png" id="2_yg87h"]
+[ext_resource type="Texture2D" uid="uid://cnvsvixm7gptv" path="res://Art/Textures/CHair/CHair_LP_DefaultMaterial_Normal.png" id="3_4i30c"]
+[ext_resource type="Texture2D" uid="uid://cqu7dxujitomx" path="res://Art/Textures/CHair/CHair_LP_DefaultMaterial_Roughness.png" id="4_jud16"]
+
+[resource]
+albedo_texture = ExtResource("1_fu63s")
+metallic = 1.0
+metallic_texture = ExtResource("2_yg87h")
+roughness_texture = ExtResource("4_jud16")
+normal_enabled = true
+normal_texture = ExtResource("3_4i30c")
