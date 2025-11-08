@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c12rwdhvobuir"]
+[gd_scene load_steps=17 format=3 uid="uid://c12rwdhvobuir"]
 
 [ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_5cjrv"]
 [ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_j0p05"]
@@ -6,6 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_gjpho"]
 [ext_resource type="Script" uid="uid://mmq4v4vie2wl" path="res://Scripts/character_body_3d.gd" id="5_45d1s"]
 [ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="5_p70al"]
+[ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="7_y7y61"]
+[ext_resource type="PackedScene" uid="uid://5f7urs658fxh" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_green.tscn" id="8_kn06e"]
+[ext_resource type="PackedScene" uid="uid://bsn5fg5jp2na6" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_yellow.tscn" id="8_q2d71"]
+[ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_7yo87"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -18,6 +22,8 @@ size = Vector3(1, 0.93078613, 1)
 radius = 0.5332031
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_45d1s"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q2d71"]
 
 [node name="World" type="Node3D"]
 
@@ -200,7 +206,7 @@ transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0
 shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.365049, 3.80407, 7.212913)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.846681, 3.80407, 7.212913)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.7350162, -0.5238775, 0.4304691, 0.23311351, 0.7914054, 0.5650979, -0.6367176, -0.31500798, 0.70381856, 0.6855583, 6.6576653, 0)
@@ -388,7 +394,7 @@ shape = SubResource("CylinderShape3D_p70al")
 [node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block" instance=ExtResource("4_gjpho")]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.506809, 0, 0)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.506809, 0, 0)
 script = ExtResource("5_45d1s")
 
 [node name="B-Oink!_Char_LP_back_v2" parent="CharacterBody3D" instance=ExtResource("5_p70al")]
@@ -397,3 +403,70 @@ transform = Transform3D(-1.3113416e-08, 0, 0.29999998, 0, 0.29999998, 0, -0.2999
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 1.1220384, 0)
 shape = SubResource("SphereShape3D_45d1s")
+
+[node name="Block2" type="StaticBody3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.8798575, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block2"]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block2" instance=ExtResource("7_y7y61")]
+transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
+
+[node name="Block3" type="StaticBody3D" parent="."]
+transform = Transform3D(0.4779273, 0, 0.14692007, 0, 0.5, 0, -0.14692007, 0, 0.4779273, 10.47766, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block3"]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block3" instance=ExtResource("8_kn06e")]
+
+[node name="Block4" type="StaticBody3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11.555151, 0, -2.6888762)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block4"]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block4" instance=ExtResource("8_q2d71")]
+transform = Transform3D(0.58788407, 0, -0.8089452, 0, 1, 0, 0.8089452, 0, 0.58788407, 0, 0, 0)
+
+[node name="Block5" type="StaticBody3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 12.445286, 0, -1.8209658)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block5"]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block5" instance=ExtResource("7_y7y61")]
+transform = Transform3D(0.994665, 0, 0.103157096, 0, 1, 0, -0.103157096, 0, 0.994665, 0, 0, -0.009914875)
+
+[node name="Block6" type="StaticBody3D" parent="."]
+transform = Transform3D(0.4779452, 0, -0.14686172, 0, 0.5, 0, 0.14686172, 0, 0.4779452, 11.880866, 1.0017852, -2.2141697)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block6"]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block6" instance=ExtResource("8_kn06e")]
+
+[node name="Block7" type="StaticBody3D" parent="."]
+transform = Transform3D(-0.036688782, 0, -0.49865216, 0, 0.5, 0, 0.49865216, 0, -0.036688782, 10.99181, 1.0017852, 0.20514703)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block7"]
+transform = Transform3D(2.1142418, 0, 5.9604645e-08, 0, 1.95, 0, -1.4901161e-08, 0, 4.1822815, 0.008535981, 1.010469, 0.116018295)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_bridge_LP" parent="Block7" instance=ExtResource("10_7yo87")]
+
+[node name="Block8" type="StaticBody3D" parent="."]
+transform = Transform3D(0.35152984, 0, -0.35556543, 0, 0.5, 0, 0.35556543, 0, 0.35152984, 12.122912, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block8"]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block8" instance=ExtResource("7_y7y61")]
+transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)

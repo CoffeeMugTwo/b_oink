@@ -1,0 +1,10 @@
+[gd_resource type="ORMMaterial3D" load_steps=3 format=3 uid="uid://15egyuyeebat"]
+
+[ext_resource type="Texture2D" uid="uid://bswslo076touu" path="res://Art/Textures/Bulding_Block_Cube_Texture/B-Oink!_Buldingblock_cube_LP_DefaultMaterial_Normal.png" id="1_rls4a"]
+[ext_resource type="Texture2D" uid="uid://doupmyah2f3jo" path="res://Art/Textures/Bulding_Block_Cube_Texture/B-Oink!_Buldingblock_cube_LP_DefaultMaterial_MaskMap.png" id="2_rr8pj"]
+
+[resource]
+albedo_color = Color(0.72993815, 0.64234376, 0, 1)
+orm_texture = ExtResource("2_rr8pj")
+normal_enabled = true
+normal_texture = ExtResource("1_rls4a")
