@@ -394,7 +394,7 @@ shape = SubResource("CylinderShape3D_p70al")
 [node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block" instance=ExtResource("4_gjpho")]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.506809, 0, 0)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.506809, 0, 0)
 script = ExtResource("5_45d1s")
 
 [node name="B-Oink!_Char_LP_back_v2" parent="CharacterBody3D" instance=ExtResource("5_p70al")]
