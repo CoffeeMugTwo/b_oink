@@ -1,16 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://np32nhxcl8ql"]
+[gd_scene load_steps=8 format=3 uid="uid://np32nhxcl8ql"]
 
 [ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="1_uwqtg"]
+[ext_resource type="Script" uid="uid://cgi003ddob7h6" path="res://Scripts/characters.gd" id="1_xtbha"]
+[ext_resource type="Script" uid="uid://cy3a1obbtgn8g" path="res://Scripts/player_back_movement.gd" id="2_42xpr"]
 [ext_resource type="PackedScene" uid="uid://0mbnt1xmnrvx" path="res://Art/Models/B-Oink!_Char_front.fbx" id="2_hs1m0"]
+[ext_resource type="PackedScene" uid="uid://d0ekkiqqjq7a0" path="res://Art/Models/B-Oink!_Char_Spring_LP_v2.fbx" id="3_ejwxu"]
+[ext_resource type="Script" uid="uid://c5mgaxraxxg0v" path="res://Scripts/player_head_movement.gd" id="3_sxmeh"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hs1m0"]
 radius = 0.31103516
 height = 0.87060547
 
 [node name="Characters" type="Node3D"]
+script = ExtResource("1_xtbha")
 
 [node name="PlayerBack" type="CharacterBody3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5, 0, 0)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.75296926, 0, 0)
+script = ExtResource("2_42xpr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerBack"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0.43530273, -0.0098134875)
@@ -19,10 +25,16 @@ shape = SubResource("CapsuleShape3D_hs1m0")
 [node name="B-Oink!_Char_LP_back_v2" parent="PlayerBack" instance=ExtResource("1_uwqtg")]
 
 [node name="PlayerHead" type="CharacterBody3D" parent="."]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.5, 0, 0)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.6976981, 0, 0)
+script = ExtResource("3_sxmeh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerHead"]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0250432e-09, 0.43530273, -0.033263683)
 shape = SubResource("CapsuleShape3D_hs1m0")
 
 [node name="B-Oink!_Char_front" parent="PlayerHead" instance=ExtResource("2_hs1m0")]
+
+[node name="Spring" type="MeshInstance3D" parent="."]
+
+[node name="B-Oink!_Char_Spring_LP_v2" parent="Spring" instance=ExtResource("3_ejwxu")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)

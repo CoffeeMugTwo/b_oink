@@ -1,17 +1,15 @@
-[gd_scene load_steps=19 format=3 uid="uid://c12rwdhvobuir"]
+[gd_scene load_steps=16 format=3 uid="uid://cwq6hmbt6f1gj"]
 
-[ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_5cjrv"]
-[ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_j0p05"]
-[ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_5nsto"]
-[ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_gjpho"]
-[ext_resource type="Script" uid="uid://mmq4v4vie2wl" path="res://Scripts/character_body_3d.gd" id="5_45d1s"]
-[ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="5_p70al"]
-[ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="7_y7y61"]
-[ext_resource type="PackedScene" uid="uid://5f7urs658fxh" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_green.tscn" id="8_kn06e"]
-[ext_resource type="PackedScene" uid="uid://bsn5fg5jp2na6" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_yellow.tscn" id="8_q2d71"]
-[ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_7yo87"]
-[ext_resource type="PackedScene" uid="uid://bfqvuwfrt4cut" path="res://Art/Models/Luggage_LP_cd.fbx" id="11_7yo87"]
-[ext_resource type="PackedScene" uid="uid://np32nhxcl8ql" path="res://Scenes/characters.tscn" id="12_ti1bm"]
+[ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_0rqgs"]
+[ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_icgjy"]
+[ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_l0hd3"]
+[ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_d5oxj"]
+[ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="7_1dj0o"]
+[ext_resource type="PackedScene" uid="uid://5f7urs658fxh" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_green.tscn" id="8_5f2ua"]
+[ext_resource type="PackedScene" uid="uid://bsn5fg5jp2na6" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_yellow.tscn" id="9_p5ob5"]
+[ext_resource type="PackedScene" uid="uid://np32nhxcl8ql" path="res://Scenes/characters.tscn" id="10_1jowa"]
+[ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_wcdqp"]
+[ext_resource type="PackedScene" uid="uid://bfqvuwfrt4cut" path="res://Art/Models/Luggage_LP_cd.fbx" id="11_8a0ub"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -23,15 +21,13 @@ size = Vector3(1, 0.93078613, 1)
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_p70al"]
 radius = 0.5332031
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_45d1s"]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_q2d71"]
 
 [node name="World" type="Node3D"]
 
 [node name="RoomEdge" type="StaticBody3D" parent="."]
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge"]
@@ -40,7 +36,7 @@ shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Floor" type="StaticBody3D" parent="."]
 
-[node name="B-Oink!_Floor_boards" parent="Floor" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor" instance=ExtResource("2_icgjy")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
@@ -50,7 +46,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="RoomEdge2" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.9957738)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge2" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge2" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge2"]
@@ -60,7 +56,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge3" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.9835799)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge3" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge3" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge3"]
@@ -70,7 +66,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge4" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.543, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge4" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge4" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge4"]
@@ -80,7 +76,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge5" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.538, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge5" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge5" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge5"]
@@ -90,7 +86,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="Floor2" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.997239, 0, 0)
 
-[node name="B-Oink!_Floor_boards" parent="Floor2" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor2" instance=ExtResource("2_icgjy")]
 transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2"]
@@ -100,7 +96,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="Floor3" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.997608, 0, 0)
 
-[node name="B-Oink!_Floor_boards" parent="Floor3" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor3" instance=ExtResource("2_icgjy")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor3"]
@@ -110,7 +106,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="Floor4" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.999666, 0, 0)
 
-[node name="B-Oink!_Floor_boards" parent="Floor4" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor4" instance=ExtResource("2_icgjy")]
 transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, 4.5896626, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor4"]
@@ -120,7 +116,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="Floor5" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021961212, -4.7683716e-07, 8.005444)
 
-[node name="B-Oink!_Floor_boards" parent="Floor5" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor5" instance=ExtResource("2_icgjy")]
 transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, 4.5896616, 1.1920929e-07, -0.0101799965)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor5"]
@@ -130,7 +126,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="Floor6" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0192, -4.7683716e-07, 8.005444)
 
-[node name="B-Oink!_Floor_boards" parent="Floor6" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor6" instance=ExtResource("2_icgjy")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor6"]
@@ -140,7 +136,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="Floor7" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.01957, -4.7683716e-07, 8.005444)
 
-[node name="B-Oink!_Floor_boards" parent="Floor7" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor7" instance=ExtResource("2_icgjy")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor7"]
@@ -150,7 +146,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="Floor8" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.021626, -4.7683716e-07, 8.005444)
 
-[node name="B-Oink!_Floor_boards" parent="Floor8" instance=ExtResource("2_j0p05")]
+[node name="B-Oink!_Floor_boards" parent="Floor8" instance=ExtResource("2_icgjy")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor8"]
@@ -160,7 +156,7 @@ shape = SubResource("BoxShape3D_gjpho")
 [node name="RoomEdge6" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.9699955)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge6" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge6" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge6"]
@@ -170,7 +166,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge7" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11.965769)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge7" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge7" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge7"]
@@ -180,7 +176,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge8" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.986415)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge8" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge8" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge8"]
@@ -190,7 +186,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge9" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.509, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge9" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge9" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge9"]
@@ -200,7 +196,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge10" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10.504, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge10" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge10" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge10"]
@@ -216,7 +212,7 @@ transform = Transform3D(0.7350162, -0.5238775, 0.4304691, 0.23311351, 0.7914054,
 [node name="RoomEdge11" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13.499987, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge11" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge11" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge11"]
@@ -226,7 +222,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge12" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.494987, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge12" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge12" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge12"]
@@ -236,7 +232,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge13" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19.465986, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge13" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge13" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge13"]
@@ -246,7 +242,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge14" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 22.460985, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge14" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge14" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge14"]
@@ -256,7 +252,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge15" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.450893, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge15" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge15" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge15"]
@@ -266,7 +262,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge16" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 28.445894, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge16" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge16" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge16"]
@@ -276,7 +272,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge17" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 31.416893, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge17" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge17" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge17"]
@@ -286,7 +282,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="RoomEdge18" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 34.411896, 0, -4.5)
 
-[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge18" instance=ExtResource("1_5cjrv")]
+[node name="B-Oink!_Bar_Straight_wood_LP" parent="RoomEdge18" instance=ExtResource("1_0rqgs")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.006721854, 0, -1.6132054)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="RoomEdge18"]
@@ -300,91 +296,91 @@ transform = Transform3D(-2.1855695e-07, 5, 0, -5, -2.1855695e-07, 0, 0, 0, 5, 0,
 transform = Transform3D(7, 2.842171e-15, 0, -1.9895196e-14, 1, 0, 0, 0, 7, 0, -0.5258506, 0)
 shape = SubResource("BoxShape3D_p70al")
 
-[node name="B-Oink!_Wall" parent="Wall" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall2" type="StaticBody3D" parent="."]
 transform = Transform3D(-2.1855695e-07, 5, 0, -5, -2.1855695e-07, 0, 0, 0, 5, 0, 5.416, 10.1516)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall2"]
 
-[node name="B-Oink!_Wall" parent="Wall2" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall2" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall3" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 4.8457103, 5.416, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall3"]
 
-[node name="B-Oink!_Wall" parent="Wall3" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall3" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall4" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 14.809118, 5.416, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall4"]
 
-[node name="B-Oink!_Wall" parent="Wall4" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall4" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall5" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 4.8457103, 5.416, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall5"]
 
-[node name="B-Oink!_Wall" parent="Wall5" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall5" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall6" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 34.68579, 5.416, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall6"]
 
-[node name="B-Oink!_Wall" parent="Wall6" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall6" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall7" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 24.722382, 5.416, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall7"]
 
-[node name="B-Oink!_Wall" parent="Wall7" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall7" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall8" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 14.809118, 15.361374, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall8"]
 
-[node name="B-Oink!_Wall" parent="Wall8" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall8" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall9" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 4.8457103, 15.361374, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall9"]
 
-[node name="B-Oink!_Wall" parent="Wall9" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall9" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall10" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 34.68579, 15.361374, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall10"]
 
-[node name="B-Oink!_Wall" parent="Wall10" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall10" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall11" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 24.722382, 15.361374, -4.4634533)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall11"]
 
-[node name="B-Oink!_Wall" parent="Wall11" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall11" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall12" type="StaticBody3D" parent="."]
 transform = Transform3D(-2.1855695e-07, 5, 0, -5, -2.1855695e-07, 0, 0, 0, 5, 0, 15.359545, 0.2)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall12"]
 
-[node name="B-Oink!_Wall" parent="Wall12" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall12" instance=ExtResource("3_l0hd3")]
 
 [node name="Wall13" type="StaticBody3D" parent="."]
 transform = Transform3D(-2.1855695e-07, 5, 0, -5, -2.1855695e-07, 0, 0, 0, 5, 0, 15.359545, 10.1516)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall13"]
 
-[node name="B-Oink!_Wall" parent="Wall13" instance=ExtResource("3_5nsto")]
+[node name="B-Oink!_Wall" parent="Wall13" instance=ExtResource("3_l0hd3")]
 
 [node name="Block" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.144747, 0, 0)
@@ -393,18 +389,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.144747, 0, 0)
 transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
 shape = SubResource("CylinderShape3D_p70al")
 
-[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block" instance=ExtResource("4_gjpho")]
-
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 4.506809, 0, 0)
-script = ExtResource("5_45d1s")
-
-[node name="B-Oink!_Char_LP_back_v2" parent="CharacterBody3D" instance=ExtResource("5_p70al")]
-transform = Transform3D(-1.3113416e-08, 0, 0.29999998, 0, 0.29999998, 0, -0.29999998, 0, -1.3113416e-08, 0, 0.514253, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 1.1220384, 0)
-shape = SubResource("SphereShape3D_45d1s")
+[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block" instance=ExtResource("4_d5oxj")]
 
 [node name="Block2" type="StaticBody3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.8798575, 0, 0)
@@ -413,7 +398,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.8798575, 0, 0)
 transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_cube_LP" parent="Block2" instance=ExtResource("7_y7y61")]
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block2" instance=ExtResource("7_1dj0o")]
 transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
 
 [node name="Block3" type="StaticBody3D" parent="."]
@@ -423,7 +408,7 @@ transform = Transform3D(0.4779273, 0, 0.14692007, 0, 0.5, 0, -0.14692007, 0, 0.4
 transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block3" instance=ExtResource("8_kn06e")]
+[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block3" instance=ExtResource("8_5f2ua")]
 
 [node name="Block4" type="StaticBody3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 15.355494, 0, -2.6888762)
@@ -432,7 +417,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 15.355494, 0, -2.688876
 transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_cube_LP" parent="Block4" instance=ExtResource("8_q2d71")]
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block4" instance=ExtResource("9_p5ob5")]
 transform = Transform3D(0.58788407, 0, -0.8089452, 0, 1, 0, 0.8089452, 0, 0.58788407, 0, 0, 0)
 
 [node name="Block5" type="StaticBody3D" parent="."]
@@ -442,7 +427,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 16.245628, 0, -1.820965
 transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_cube_LP" parent="Block5" instance=ExtResource("7_y7y61")]
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block5" instance=ExtResource("7_1dj0o")]
 transform = Transform3D(0.994665, 0, 0.103157096, 0, 1, 0, -0.103157096, 0, 0.994665, 0, 0, -0.009914875)
 
 [node name="Block6" type="StaticBody3D" parent="."]
@@ -452,7 +437,7 @@ transform = Transform3D(0.4779452, 0, -0.14686172, 0, 0.5, 0, 0.14686172, 0, 0.4
 transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block6" instance=ExtResource("8_kn06e")]
+[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block6" instance=ExtResource("8_5f2ua")]
 
 [node name="Block7" type="StaticBody3D" parent="."]
 transform = Transform3D(-0.036688782, 0, -0.49865216, 0, 0.5, 0, 0.49865216, 0, -0.036688782, 10.99181, 1.0017852, 0.20514703)
@@ -461,7 +446,7 @@ transform = Transform3D(-0.036688782, 0, -0.49865216, 0, 0.5, 0, 0.49865216, 0, 
 transform = Transform3D(2.1142418, 0, 5.9604645e-08, 0, 1.95, 0, -1.4901161e-08, 0, 4.1822815, 0.008535981, 1.010469, 0.116018295)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_bridge_LP" parent="Block7" instance=ExtResource("10_7yo87")]
+[node name="B-Oink!_Buldingblock_bridge_LP" parent="Block7" instance=ExtResource("10_wcdqp")]
 
 [node name="Block8" type="StaticBody3D" parent="."]
 transform = Transform3D(0.35152984, 0, -0.35556543, 0, 0.5, 0, 0.35556543, 0, 0.35152984, 12.122912, 0, 0)
@@ -470,13 +455,13 @@ transform = Transform3D(0.35152984, 0, -0.35556543, 0, 0.5, 0, 0.35556543, 0, 0.
 transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 0, 1.010469, 0)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="B-Oink!_Buldingblock_cube_LP" parent="Block8" instance=ExtResource("7_y7y61")]
+[node name="B-Oink!_Buldingblock_cube_LP" parent="Block8" instance=ExtResource("7_1dj0o")]
 transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
-[node name="Luggage_LP_cd" parent="StaticBody3D" instance=ExtResource("11_7yo87")]
+[node name="Luggage_LP_cd" parent="StaticBody3D" instance=ExtResource("11_8a0ub")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 22.298285, 0, 0)
 
-[node name="Characters" parent="." instance=ExtResource("12_ti1bm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5499227, 0, 0)
+[node name="Characters" parent="." instance=ExtResource("10_1jowa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.627081, 0.15780652, 0)
