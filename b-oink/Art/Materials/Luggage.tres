@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://cobdey0e8etfq"]
+
+[ext_resource type="Texture2D" uid="uid://bf7xx57ntabsn" path="res://Art/Textures/Luggage/Luggage_LP_DefaultMaterial_BaseColor.png" id="1_q5nxj"]
+[ext_resource type="Texture2D" uid="uid://dmht75ker25hg" path="res://Art/Textures/Luggage/Luggage_LP_DefaultMaterial_Metallic.png" id="2_ibmxi"]
+[ext_resource type="Texture2D" uid="uid://bj4dxd5t1vh71" path="res://Art/Textures/Luggage/Luggage_LP_DefaultMaterial_Normal.png" id="3_hbtyl"]
+[ext_resource type="Texture2D" uid="uid://b8cb24exxgiaf" path="res://Art/Textures/Luggage/Luggage_LP_DefaultMaterial_Roughness.png" id="4_fqes6"]
+
+[resource]
+albedo_texture = ExtResource("1_q5nxj")
+metallic = 1.0
+metallic_texture = ExtResource("2_ibmxi")
+roughness_texture = ExtResource("4_fqes6")
+normal_enabled = true
+normal_texture = ExtResource("3_hbtyl")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://i43aut0vc512"]
+[gd_scene load_steps=20 format=3 uid="uid://i43aut0vc512"]
 
 [ext_resource type="PackedScene" uid="uid://vv065mcc2cc0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="1_wlm07"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="2_c83vi"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dscioaeii4vhb" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="9_c83vi"]
 [ext_resource type="PackedScene" uid="uid://c1vloahd8enej" path="res://Art/Models/B-Oink!_Domino_LP.fbx" id="10_6fx8x"]
 [ext_resource type="PackedScene" uid="uid://bfqvuwfrt4cut" path="res://Art/Models/Luggage_LP_cd.fbx" id="11_crea5"]
+[ext_resource type="Material" uid="uid://bxaag8wb7f0rh" path="res://Art/Alternate_Models/Lagguage.tres" id="12_6xqq2"]
 [ext_resource type="PackedScene" uid="uid://cye25i7sbtq15" path="res://Art/Models/B-Oink!_Socket_LP.fbx" id="12_mku0s"]
 [ext_resource type="PackedScene" uid="uid://xdjn8j01vrus" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="13_8rpb8"]
 [ext_resource type="PackedScene" uid="uid://fuifpr73arbw" path="res://Art/Models/Telephone_LP.gltf" id="14_4602l"]
@@ -174,6 +175,21 @@ transform = Transform3D(0.82110924, 0.27528125, -0.49999982, 0.31786734, -0.9481
 [node name="Luggage_LP_cd" parent="." instance=ExtResource("11_crea5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.2737074, 1, 7.7700524)
 
+[node name="luggage_body" parent="Luggage_LP_cd" index="0"]
+surface_material_override/0 = ExtResource("12_6xqq2")
+
+[node name="luggage_patch" parent="Luggage_LP_cd" index="1"]
+surface_material_override/0 = ExtResource("12_6xqq2")
+
+[node name="luggage_band" parent="Luggage_LP_cd" index="2"]
+surface_material_override/0 = ExtResource("12_6xqq2")
+
+[node name="luggage_lock" parent="Luggage_LP_cd" index="3"]
+surface_material_override/0 = ExtResource("12_6xqq2")
+
+[node name="luggage_handle" parent="Luggage_LP_cd" index="4"]
+surface_material_override/0 = ExtResource("12_6xqq2")
+
 [node name="B-Oink!_Socket_LP" parent="." instance=ExtResource("12_mku0s")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.7716109, 2, 1.5323713)
 
@@ -191,3 +207,5 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.5
 
 [node name="Chair_LP" parent="." instance=ExtResource("17_o8xbc")]
 transform = Transform3D(-0.9659258, 0, 0.25881913, 0, 1, 0, -0.25881913, 0, -0.9659258, -2.886403, 3, 13.430128)
+
+[editable path="Luggage_LP_cd"]
