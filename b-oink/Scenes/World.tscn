@@ -223,7 +223,7 @@ transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0
 shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.369709, 5.8451095, 7.212913)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.262722, 5.8451095, 15.471533)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.07303497, -0.47181213, 0.87866914, 0.25164002, 0.86123455, 0.4415341, -0.9650612, 0.18886085, 0.18162705, 28.295916, 7.9920297, 6.2795568)
@@ -500,7 +500,7 @@ autoplay = true
 parameters/looping = true
 
 [node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 17.657387, 2.9578404, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.6686745, 0.50873804, 0)
 
 [node name="Curtain_LP2" parent="." instance=ExtResource("14_8l3nt")]
 transform = Transform3D(-4.371139e-07, 0, -10, 0, 10, 0, 10, 0, -4.371139e-07, 54.47079, 0.009225893, -2.8395028)
