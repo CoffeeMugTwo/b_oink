@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://cp54cumnxhfno"]
+
+[ext_resource type="Texture2D" uid="uid://da7po70wkor04" path="res://Art/Textures/Bulding_Block_Cube_Texture/B-Oink!_Buldingblock_cube_LP_DefaultMaterial_BaseMap.png" id="1_6bsdw"]
+[ext_resource type="Texture2D" uid="uid://bswslo076touu" path="res://Art/Textures/Bulding_Block_Cube_Texture/B-Oink!_Buldingblock_cube_LP_DefaultMaterial_Normal.png" id="2_xiuql"]
+[ext_resource type="Texture2D" uid="uid://doupmyah2f3jo" path="res://Art/Textures/Bulding_Block_Cube_Texture/B-Oink!_Buldingblock_cube_LP_DefaultMaterial_MaskMap.png" id="3_rrhhy"]
+
+[resource]
+albedo_texture = ExtResource("1_6bsdw")
+orm_texture = ExtResource("3_rrhhy")
+normal_enabled = true
+normal_texture = ExtResource("2_xiuql")

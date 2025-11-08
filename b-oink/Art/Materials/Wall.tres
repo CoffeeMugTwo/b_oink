@@ -1,3 +1,11 @@
-[gd_resource type="ORMMaterial3D" format=3 uid="uid://ytoy5i6k3fkt"]
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://ytoy5i6k3fkt"]
+
+[ext_resource type="Texture2D" uid="uid://i1mf7g2w72gp" path="res://Art/Textures/Wall_Texture/B-Oink!_Floor_boards_DefaultMaterial_BaseMap.png" id="1_8pnre"]
+[ext_resource type="Texture2D" uid="uid://3tp0ild6npvh" path="res://Art/Textures/Wall_Texture/B-Oink!_Floor_boards_DefaultMaterial_Normal.png" id="2_csoi4"]
+[ext_resource type="Texture2D" uid="uid://c7pklji44063x" path="res://Art/Textures/Wall_Texture/B-Oink!_Floor_boards_DefaultMaterial_MaskMap.png" id="3_qlntb"]
 
 [resource]
+albedo_texture = ExtResource("1_8pnre")
+orm_texture = ExtResource("3_qlntb")
+normal_enabled = true
+normal_texture = ExtResource("2_csoi4")
