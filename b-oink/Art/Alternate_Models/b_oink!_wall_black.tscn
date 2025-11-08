@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://xer8sd67nfu4"]
+
+[ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="1_pq00p"]
+
+[node name="B-Oink!_Wall" instance=ExtResource("1_pq00p")]
