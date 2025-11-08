@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxxrvrs02te21"]
+
+[ext_resource type="Script" uid="uid://cr680rpvldmbs" path="res://Scenes/workbench/butt.gd" id="1_2q156"]
+[ext_resource type="PackedScene" uid="uid://dglilldt0rv72" path="res://Art/Models/B-Oink!_Char.fbx" id="1_mfvv3"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mfvv3"]
+radius = 1.0307617
+height = 3.1835938
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2q156"]
+
+[node name="Butt" type="CharacterBody3D"]
+script = ExtResource("1_2q156")
+
+[node name="B-Oink!_Char" parent="." instance=ExtResource("1_mfvv3")]
+transform = Transform3D(1.1924881e-08, 0, 1, 0, 1, 0, -1, 0, 1.1924881e-08, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7672639, 0)
+shape = SubResource("CapsuleShape3D_mfvv3")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9889468, 2.0379062, 0)
+shape = SubResource("SphereShape3D_2q156")
