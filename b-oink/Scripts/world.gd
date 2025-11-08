@@ -10,6 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_end_zone_all_players_inside() -> void:
 	get_tree().change_scene_to_file("res://Scenes/win_screen.tscn")
