@@ -1,0 +1,215 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5331,
+            "type": "VEC3",
+            "max": [
+                0.16510115563869477,
+                0.1318821907043457,
+                0.3505566418170929
+            ],
+            "min": [
+                -0.09381096065044403,
+                -0.1318821907043457,
+                -0.21932873129844666
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5331,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5331,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9999997019767761,
+                -1.0,
+                -1.0,
+                -0.9999997019767761
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5331,
+            "type": "VEC2",
+            "max": [
+                0.999998927116394,
+                0.9999989867210388
+            ],
+            "min": [
+                0.0000010011717677116395,
+                0.00400310754776001
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 8856,
+            "type": "SCALAR",
+            "max": [
+                5330.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 273600,
+            "uri": "Teddy_LP.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 63972,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 63972,
+            "byteLength": 63972,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 127944,
+            "byteLength": 85296,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 213240,
+            "byteLength": 42648,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 255888,
+            "byteLength": 17712,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Teddy_LP",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "matrix": [
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "Teddy_LP",
+            "matrix": [
+                100.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.000014150970855553169,
+                -86.85803985595703,
+                0.0,
+                0.0,
+                72.26127624511719,
+                -0.000011772855941671878,
+                0.0,
+                0.0,
+                1.7773293256759644,
+                0.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}

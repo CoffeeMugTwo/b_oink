@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://nmcccgpmyw80"]
+
+[ext_resource type="Texture2D" uid="uid://cqpi3gsfyo0ld" path="res://Art/Textures/Teddy/Teddy_LP_DefaultMaterial_BaseColor.png" id="1_ahgyc"]
+[ext_resource type="Texture2D" uid="uid://bi0iqglooyqck" path="res://Art/Textures/Teddy/Teddy_LP_DefaultMaterial_Metallic.png" id="2_oi7ta"]
+[ext_resource type="Texture2D" uid="uid://bcqq34uamjwtq" path="res://Art/Textures/Teddy/Teddy_LP_DefaultMaterial_Normal.png" id="3_gpe07"]
+[ext_resource type="Texture2D" uid="uid://cm80wxab3w8dx" path="res://Art/Textures/Teddy/Teddy_LP_DefaultMaterial_Roughness.png" id="4_fw45o"]
+
+[resource]
+albedo_texture = ExtResource("1_ahgyc")
+metallic = 1.0
+metallic_texture = ExtResource("2_oi7ta")
+roughness_texture = ExtResource("4_fw45o")
+normal_enabled = true
+normal_texture = ExtResource("3_gpe07")

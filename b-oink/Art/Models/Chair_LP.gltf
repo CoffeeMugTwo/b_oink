@@ -1,0 +1,215 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 344,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                0.9999999403953552,
+                2.0421669483184816
+            ],
+            "min": [
+                -1.2861888408660889,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 344,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 344,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9995124936103821,
+                -1.0,
+                -0.9984851479530335,
+                -0.9995124936103821
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 344,
+            "type": "VEC2",
+            "max": [
+                0.999998927116394,
+                0.9999989867210388
+            ],
+            "min": [
+                0.0000010512303560972214,
+                0.26953166723251345
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 618,
+            "type": "SCALAR",
+            "max": [
+                343.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 17748,
+            "uri": "Chair_LP.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 4128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 4128,
+            "byteLength": 4128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 8256,
+            "byteLength": 5504,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 13760,
+            "byteLength": 2752,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 16512,
+            "byteLength": 1236,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    0.6000000238418579,
+                    1.0
+                ],
+                "metallicFactor": 0.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Chair_Lp",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "matrix": [
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.009999999776482582,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "Chair_Lp",
+            "matrix": [
+                20.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -0.0000032584136988589309,
+                -20.0,
+                0.0,
+                0.0,
+                29.999998092651368,
+                -0.0000048876199798542079,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
