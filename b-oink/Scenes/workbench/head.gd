@@ -33,13 +33,13 @@ func _update_velocity(delta: float) -> void:
 	# update velocity according to resulting force 
 	var current_force_vector : Vector3 = spring_force 
 	# apply forces according to input
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("p1_right"):
 		current_force_vector += Vector3(1, 0 ,0 ) * max_input_force_scalar
 		
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("p1_left"):
 		current_force_vector += Vector3(-1, 0, 0) * max_input_force_scalar
 		
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("p1_jump") and is_on_floor():
 		current_force_vector += Vector3(0, 1, 0) * jump_force_scalar
 		
 		
