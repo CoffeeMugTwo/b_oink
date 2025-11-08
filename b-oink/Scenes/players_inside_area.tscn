@@ -4,13 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://bxrnw4u303w4h" path="res://Art/Models/B-Oink!_Buldingblock_cube_LP.fbx" id="2_s23tw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3tvxv"]
-size = Vector3(2.4638672, 2.0576172, 3.0185547)
+size = Vector3(1.7848511, 2.0576172, 1.8136597)
 
 [node name="PlayersInsideArea" type="Area3D"]
 script = ExtResource("1_8si28")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.029921532, 1.0288086, -0.03173828)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03254795, 1.0288086, 0.057403564)
 shape = SubResource("BoxShape3D_3tvxv")
 
 [node name="B-Oink!_Buldingblock_cube_LP" parent="." instance=ExtResource("2_s23tw")]

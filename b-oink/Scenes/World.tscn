@@ -1,6 +1,7 @@
-[gd_scene load_steps=28 format=3 uid="uid://c12rwdhvobuir"]
+[gd_scene load_steps=30 format=3 uid="uid://c12rwdhvobuir"]
 
 [ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_5cjrv"]
+[ext_resource type="Script" uid="uid://dyvc74m7cohq8" path="res://Scripts/world.gd" id="1_r0dna"]
 [ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_j0p05"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_5nsto"]
 [ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_gjpho"]
@@ -16,8 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://blaj83ljd7ftn" path="res://Art/Models/Curtain_LP.gltf" id="14_8l3nt"]
 [ext_resource type="PackedScene" uid="uid://p0uyi8jieasc" path="res://Art/Models/Chair_LP.gltf" id="15_kwl8l"]
 [ext_resource type="PackedScene" uid="uid://djx6htad3ovwe" path="res://Art/Models/Teddy_LP.gltf" id="16_xiqgv"]
-[ext_resource type="PackedScene" uid="uid://doaeowvopsl7f" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="17_waglr"]
+[ext_resource type="PackedScene" uid="uid://xdjn8j01vrus" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="17_waglr"]
 [ext_resource type="PackedScene" uid="uid://c1vloahd8enej" path="res://Art/Models/B-Oink!_Domino_LP.fbx" id="18_rwt1y"]
+[ext_resource type="PackedScene" uid="uid://cbutrd7rji0r1" path="res://Scenes/players_inside_area.tscn" id="20_b5aes"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -43,6 +45,7 @@ size = Vector3(0.99890137, 1, 1.3512268)
 size = Vector3(1.3322754, 0.059326172, 1)
 
 [node name="World" type="Node3D"]
+script = ExtResource("1_r0dna")
 
 [node name="RoomEdge" type="StaticBody3D" parent="."]
 
@@ -223,7 +226,7 @@ transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0
 shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.369709, 5.8451095, 7.212913)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.598137, 4.8451095, 7.212913)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.07303497, -0.47181213, 0.87866914, 0.25164002, 0.86123455, 0.4415341, -0.9650612, 0.18886085, 0.18162705, 28.295916, 7.9920297, 6.2795568)
@@ -500,7 +503,7 @@ autoplay = true
 parameters/looping = true
 
 [node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 17.657387, 2.9578404, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 58.4527, 0.4266448, 0)
 
 [node name="Curtain_LP2" parent="." instance=ExtResource("14_8l3nt")]
 transform = Transform3D(-4.371139e-07, 0, -10, 0, 10, 0, 10, 0, -4.371139e-07, 54.47079, 0.009225893, -2.8395028)
@@ -1154,3 +1157,8 @@ shape = SubResource("BoxShape3D_q2d71")
 
 [node name="B-Oink!_Buldingblock_cube_LP" parent="Block15" instance=ExtResource("7_y7y61")]
 transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
+
+[node name="EndZone" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 65.80617, -0.02009058, 0)
+
+[connection signal="all_players_inside" from="EndZone" to="." method="_on_end_zone_all_players_inside"]

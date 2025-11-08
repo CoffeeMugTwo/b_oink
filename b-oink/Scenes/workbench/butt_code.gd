@@ -42,9 +42,9 @@ func _update_velocity(delta: float) -> void:
 		
 	var current_acceleration = current_force_vector / mass
 	
-	print("Butt")
-	print("current acceleration")
-	print(current_acceleration)
+	##print("Butt")
+	##print("current acceleration")
+	##print(current_acceleration)
 	
 	velocity += current_acceleration * delta
 	
