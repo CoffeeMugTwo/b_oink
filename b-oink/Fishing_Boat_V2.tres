@@ -1,7 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6oymvg6t82m8"]
-
-[ext_resource type="Texture2D" uid="uid://dw5mv03yhf6tp" path="res://Fishing_Boat_DefaultMaterial_BaseMap.png" id="1_dvh1n"]
-
-[resource]
-diffuse_mode = 3
-albedo_texture = ExtResource("1_dvh1n")
