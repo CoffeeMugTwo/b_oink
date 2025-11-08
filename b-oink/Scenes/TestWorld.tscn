@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bsn5fg5jp2na6" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_yellow.tscn" id="9_p5ob5"]
 [ext_resource type="PackedScene" uid="uid://np32nhxcl8ql" path="res://Scenes/characters.tscn" id="10_1jowa"]
 [ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_wcdqp"]
-[ext_resource type="PackedScene" uid="uid://bfqvuwfrt4cut" path="res://Art/Models/Luggage_LP_cd.fbx" id="11_8a0ub"]
+[ext_resource type="PackedScene" uid="uid://u28a0yy4v4c2" path="res://Art/Models/B-Oink!_Luggage_LP_.fbx" id="11_8a0ub"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
