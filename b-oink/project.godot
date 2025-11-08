@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="b_oink"
-run/main_scene="res://Scenes/TEst_Art.tscn"
+run/main_scene="uid://c12rwdhvobuir"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
