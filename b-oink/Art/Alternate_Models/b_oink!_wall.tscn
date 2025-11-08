@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://djlw4fh3oeo2r"]
+
+[ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="1_6jdsr"]
+[ext_resource type="Material" uid="uid://dxy1d0cb88ype" path="res://Art/Materials/Wall_Black.tres" id="2_fklvh"]
+
+[node name="B-Oink!_Wall" instance=ExtResource("1_6jdsr")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_fklvh")

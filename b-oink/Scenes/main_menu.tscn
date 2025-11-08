@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjyep4puhj11h"]
+[gd_scene load_steps=7 format=3 uid="uid://bjyep4puhj11h"]
 
 [ext_resource type="Texture2D" uid="uid://cf1pr5cycegkj" path="res://Art/Textures/Floor_Board_texture/B-Oink!_Floor_boards_DefaultMaterial_BaseMap.png" id="1_28flt"]
 [ext_resource type="Script" uid="uid://c7axupfnkr2nc" path="res://Scripts/main_menu.gd" id="1_48xlc"]
+[ext_resource type="AudioStream" uid="uid://cvipl7b1k3yu1" path="res://Musik/B_oink_Menu.mp3" id="3_1ehe0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_28flt"]
 bg_color = Color(0, 0, 0, 1)
@@ -105,6 +106,11 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_28flt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_48xlc")
 theme_override_styles/hover = SubResource("StyleBoxFlat_1ehe0")
 text = "Exit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1ehe0")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
