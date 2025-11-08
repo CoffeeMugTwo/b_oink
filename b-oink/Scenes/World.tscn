@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c12rwdhvobuir"]
+[gd_scene load_steps=12 format=3 uid="uid://c12rwdhvobuir"]
 
 [ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_5cjrv"]
 [ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_j0p05"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_5nsto"]
 [ext_resource type="PackedScene" uid="uid://bynltsclhkugb" path="res://Art/Models/B-Oink!_Buldingblock_cylinder_LP.fbx" id="4_gjpho"]
+[ext_resource type="Script" uid="uid://mmq4v4vie2wl" path="res://Scenes/character_body_3d.gd" id="5_45d1s"]
+[ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="5_p70al"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -14,6 +16,8 @@ size = Vector3(1, 0.93078613, 1)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_p70al"]
 radius = 0.5332031
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_45d1s"]
 
 [node name="World" type="Node3D"]
 
@@ -196,7 +200,7 @@ transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0
 shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5577316, 3.80407, 8.640504)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.365049, 3.80407, 7.212913)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.7350162, -0.5238775, 0.4304691, 0.23311351, 0.7914054, 0.5650979, -0.6367176, -0.31500798, 0.70381856, 0.6855583, 6.6576653, 0)
@@ -382,3 +386,14 @@ transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
 shape = SubResource("CylinderShape3D_p70al")
 
 [node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block" instance=ExtResource("4_gjpho")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.506809, 0, 0)
+script = ExtResource("5_45d1s")
+
+[node name="B-Oink!_Char_LP_back_v2" parent="CharacterBody3D" instance=ExtResource("5_p70al")]
+transform = Transform3D(-1.3113416e-08, 0, 0.29999998, 0, 0.29999998, 0, -0.29999998, 0, -1.3113416e-08, 0, 0.514253, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 1.1220384, 0)
+shape = SubResource("SphereShape3D_45d1s")
