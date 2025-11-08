@@ -14,7 +14,7 @@ height = 0.87060547
 [node name="Characters" type="Node3D"]
 script = ExtResource("1_xtbha")
 
-[node name="PlayerBack" type="CharacterBody3D" parent="."]
+[node name="PlayerBack" type="CharacterBody3D" parent="." groups=["players"]]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.75296926, 0, 0)
 script = ExtResource("2_42xpr")
 
@@ -24,7 +24,7 @@ shape = SubResource("CapsuleShape3D_hs1m0")
 
 [node name="B-Oink!_Char_LP_back_v2" parent="PlayerBack" instance=ExtResource("1_uwqtg")]
 
-[node name="PlayerHead" type="CharacterBody3D" parent="."]
+[node name="PlayerHead" type="CharacterBody3D" parent="." groups=["players"]]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.6976981, 0, 0)
 script = ExtResource("3_sxmeh")
 

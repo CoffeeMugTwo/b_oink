@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://cwq6hmbt6f1gj"]
+[gd_scene load_steps=19 format=3 uid="uid://cwq6hmbt6f1gj"]
 
 [ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_0rqgs"]
+[ext_resource type="Script" uid="uid://b3tyji3lvyosh" path="res://Scripts/test_world.gd" id="1_d5oxj"]
 [ext_resource type="Material" uid="uid://btqfsmymufd3b" path="res://Art/Materials/Wood_Bar_straight.tres" id="2_0rqgs"]
 [ext_resource type="PackedScene" uid="uid://dpdlg3jwq3gw0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="2_icgjy"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="3_l0hd3"]
@@ -26,6 +27,7 @@ radius = 0.5332031
 [sub_resource type="BoxShape3D" id="BoxShape3D_q2d71"]
 
 [node name="World" type="Node3D"]
+script = ExtResource("1_d5oxj")
 
 [node name="RoomEdge" type="StaticBody3D" parent="."]
 
@@ -42,7 +44,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="Floor" type="StaticBody3D" parent="."]
 
 [node name="B-Oink!_Floor_boards" parent="Floor" instance=ExtResource("2_icgjy")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.594633, -0.0016281009, -0.010695733)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.261, -0.467, 0)
