@@ -1,6 +1,7 @@
 extends Area3D
 
 signal all_players_inside
+signal player_entered_box
 # Called when the node enters the scene tree for the first time.
 var players_in_zone: Array = []
 
@@ -10,6 +11,7 @@ func _ready() -> void:
 
 func _on_body_entered(body):
 	print("Player Entered")
+	emit_signal("player_entered_box")
 	if body.is_in_group("players") and body not in players_in_zone:
 		players_in_zone.append(body)
 		_check_all_players_inside()
