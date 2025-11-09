@@ -64,6 +64,7 @@ size = Vector3(2.350586, 1.2319336, 0.19311523)
 size = Vector3(0.33958435, 0.46044922, 0.6394043)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_y1bqn"]
+size = Vector3(1, 0.89279175, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_g01fq"]
 size = Vector3(2.7216797, 1, 1)
@@ -86,7 +87,7 @@ shape = SubResource("BoxShape3D_5nsto")
 [node name="Floor" type="StaticBody3D" parent="."]
 
 [node name="B-Oink!_Floor_boards" parent="Floor" instance=ExtResource("2_j0p05")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5896616, 1.1920929e-07, -0.010180153)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 4.5944066, 1.1920929e-07, -0.010151066)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
 transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 4.261, -0.467, 0)
@@ -253,7 +254,7 @@ transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0
 shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.22623, 10.195745, 7.7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.163909, 5.52963, 7.7)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.07303497, -0.47181213, 0.87866914, 0.25164002, 0.86123455, 0.4415341, -0.9650612, 0.18886085, 0.18162705, 28.295916, 7.9920297, 6.2795568)
@@ -443,7 +444,7 @@ shape = SubResource("CylinderShape3D_p70al")
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 6.8798575, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Block2"]
-transform = Transform3D(1.947484, 0, -0.09903014, 0, 1.9500003, 0, 0.09903014, 0, 1.947484, 0, 1.5214036, 0)
+transform = Transform3D(1.947484, 0, -0.09903014, 0, 1.9500003, 0, 0.09903014, 0, 1.947484, -0.011847496, 1.5186738, 0.0032515526)
 shape = SubResource("BoxShape3D_q2d71")
 
 [node name="B-Oink!_Buldingblock_cube_LP" parent="Block2" instance=ExtResource("7_y7y61")]
@@ -528,9 +529,6 @@ transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, -0.5, 0, 0.5, -2.1855694e-
 stream = ExtResource("13_op4cu")
 autoplay = true
 parameters/looping = true
-
-[node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 33.96444, 5.889581, 0)
 
 [node name="Curtain_LP2" parent="." instance=ExtResource("14_8l3nt")]
 transform = Transform3D(-7.430936e-07, 0, -17, 0, 17, 0, 17, 0, -7.430936e-07, 102.49734, 0.48170567, -2.1269221)
@@ -1192,7 +1190,7 @@ transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 84.696014, 30.718573, 0)
 
 [node name="JengaTurm" type="StaticBody3D" parent="."]
-transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 39.720016, 2.3164816, -2.5507295)
+transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 39.720016, 1.4724302, -2.5507295)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="JengaTurm"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7244148, 11.4848385, 2.3027735)
@@ -1420,10 +1418,10 @@ shape = SubResource("BoxShape3D_33kev")
 transform = Transform3D(0.5285932, -0.28664255, -0.35836482, 0, 0.54664487, -0.43724066, 0.45890006, 0.33017492, 0.41278964, 65.776596, 10.470605, -3.4434896)
 
 [node name="Buchstabenklotz" type="StaticBody3D" parent="."]
-transform = Transform3D(0.57346046, 0, -0.17647421, 0, 0.6, 0, 0.17647421, 0, 0.57346046, 35.75926, 5.5817294, 0)
+transform = Transform3D(0.4778837, 0, -0.14706184, 0, 0.5, 0, 0.14706184, 0, 0.4778837, 35.541412, 5.5817294, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz"]
-transform = Transform3D(1.7402909, 0, 0.76248604, 0, 1.8999996, 0, -0.76248604, 0, 1.7402909, -0.9171829, 1.0372858, 0.28225136)
+transform = Transform3D(1.8205198, 0, 0.5437931, 0, 1.8999999, 0, -0.5437931, 0, 1.8205198, -0.9171829, 0.9923487, 0.28225708)
 shape = SubResource("BoxShape3D_y1bqn")
 
 [node name="Buchstabenklotz_LP2" parent="Buchstabenklotz" instance=ExtResource("26_0bcf6")]
@@ -1473,27 +1471,27 @@ transform = Transform3D(-3.6053056e-08, -0.8247978, -0.5654278, 1, -4.371139e-08
 transform = Transform3D(-3.3204206e-08, 0.7596237, -0.25094208, -0.80000013, -3.496912e-08, 0, -1.0969027e-08, 0.25094205, 0.7596236, 34.23835, 2.0023417, 0.72822034)
 
 [node name="Buchstabenklotz2" type="StaticBody3D" parent="."]
-transform = Transform3D(-0.55196685, 0, -0.23522894, 0, 0.6, 0, 0.23522894, 0, -0.55196685, 35.42555, 6.817176, 0.14610004)
+transform = Transform3D(-0.45997235, 0, -0.1960241, 0, 0.5, 0, 0.1960241, 0, -0.45997235, 35.42555, 6.817176, 0.32078767)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz2"]
-transform = Transform3D(1.8999996, 0, 4.172325e-07, 0, 1.9, 0, -4.172325e-07, 0, 1.8999996, -0.9678993, 1.0372858, 0.063194275)
+transform = Transform3D(1.7710309, 0, -0.68807524, 0, 1.8999997, 0, 0.68807524, 0, 1.7710309, -0.83969116, 1.0086422, 0.11783981)
 shape = SubResource("BoxShape3D_y1bqn")
 
 [node name="Buchstabenklotz_LP2" parent="Buchstabenklotz2" instance=ExtResource("26_0bcf6")]
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.9536514, 0, 0.08409119)
 
 [node name="Buchstabenklotz3" type="StaticBody3D" parent="."]
-transform = Transform3D(0.10870278, 0, 0.59007096, 0, 0.6, 0, -0.59007096, 0, 0.10870278, 36.520504, 8.04098, -0.5770633)
+transform = Transform3D(0.09058567, 0, 0.49172577, 0, 0.5, 0, -0.49172577, 0, 0.09058567, 36.333904, 7.832656, -0.22575188)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz3"]
-transform = Transform3D(1.8999997, 0, 2.9802322e-07, 0, 1.9, 0, -2.9802322e-07, 0, 1.8999997, -0.6481552, 1.0372853, 0.19946003)
+transform = Transform3D(1.7778118, 0, 0.6703615, 0, 1.9, 0, -0.6703615, 0, 1.7778118, -0.64815426, 1.009018, 0.19945526)
 shape = SubResource("BoxShape3D_y1bqn")
 
 [node name="Buchstabenklotz_LP2" parent="Buchstabenklotz3" instance=ExtResource("26_0bcf6")]
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
 
 [node name="Buchstabenklotz4" type="StaticBody3D" parent="."]
-transform = Transform3D(0.40646458, 0, 0.44134632, 0, 0.59999996, 0, -0.44134632, 0, 0.40646458, 36.769234, 5.5817294, -1.1364647)
+transform = Transform3D(0.3387205, 0, 0.36778855, 0, 0.5, 0, -0.36778855, 0, 0.3387205, 36.670383, 5.5817294, -0.50794995)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz4"]
 transform = Transform3D(1.8999997, 0, 2.9802322e-07, 0, 1.9, 0, -2.9802322e-07, 0, 1.8999997, -0.6481552, 1.0372853, 0.19946003)
@@ -1501,5 +1499,8 @@ shape = SubResource("BoxShape3D_y1bqn")
 
 [node name="Buchstabenklotz_LP2" parent="Buchstabenklotz4" instance=ExtResource("26_0bcf6")]
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
+
+[node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.8240523, 0.69992363, 0)
 
 [connection signal="all_players_inside" from="EndZone" to="." method="_on_end_zone_all_players_inside"]
