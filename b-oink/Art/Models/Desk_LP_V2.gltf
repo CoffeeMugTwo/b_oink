@@ -1,0 +1,182 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1098,
+            "type": "VEC3",
+            "max": [
+                1.5912425518035889,
+                1.2363237142562867,
+                1.5
+            ],
+            "min": [
+                -1.0,
+                -3.0,
+                -1.5
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1098,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1098,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -0.9999985098838806,
+                -0.9999990463256836,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1098,
+            "type": "VEC2",
+            "max": [
+                0.9989999532699585,
+                0.9990000128746033
+            ],
+            "min": [
+                0.0009999964386224747,
+                0.4164257049560547
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4878,
+            "type": "SCALAR",
+            "max": [
+                1097.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 62460,
+            "uri": "Desk_LP_V2.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 13176,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 13176,
+            "byteLength": 13176,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 26352,
+            "byteLength": 17568,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 43920,
+            "byteLength": 8784,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 52704,
+            "byteLength": 9756,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.002",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Desk_LP",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -0.25,
+                3.0,
+                0.0,
+                1.0
+            ],
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
