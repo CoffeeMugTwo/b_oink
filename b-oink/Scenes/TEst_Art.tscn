@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://i43aut0vc512"]
+[gd_scene load_steps=35 format=3 uid="uid://i43aut0vc512"]
 
 [ext_resource type="PackedScene" uid="uid://vv065mcc2cc0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="1_wlm07"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="2_c83vi"]
@@ -31,6 +31,8 @@
 [ext_resource type="Material" uid="uid://bk82el5136hn" path="res://Art/Materials/Ruler.tres" id="29_wrw55"]
 [ext_resource type="PackedScene" uid="uid://djaf3yfo8pp0u" path="res://Art/Models/Book_Var.fbx" id="30_fibjl"]
 [ext_resource type="Material" uid="uid://bw7qipx6msj4h" path="res://Art/Materials/Book_var_04.tres" id="31_0id8n"]
+[ext_resource type="PackedScene" uid="uid://dhxpy6bgiwbuw" path="res://Art/Models/Floppydisk_LP.fbx" id="32_fibjl"]
+[ext_resource type="Material" uid="uid://c2gu0p5w5w7oa" path="res://Art/Materials/Floppydisk.tres" id="33_0id8n"]
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_wlm07"]
 exposure_multiplier = 0.895
@@ -279,8 +281,15 @@ transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, -4.0
 [node name="Book_LP" parent="Book_Var" index="0"]
 material_override = ExtResource("31_0id8n")
 
+[node name="Floppydisk_LP" parent="." instance=ExtResource("32_fibjl")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -4.763391, 0, 8.198531)
+
+[node name="Disk_LP" parent="Floppydisk_LP" index="0"]
+material_override = ExtResource("33_0id8n")
+
 [editable path="Luggage_LP_cd"]
 [editable path="Desk_LP_V2"]
 [editable path="Vent"]
 [editable path="Ruler_LP_V2"]
 [editable path="Book_Var"]
+[editable path="Floppydisk_LP"]
