@@ -1,0 +1,8 @@
+[gd_resource type="ORMMaterial3D" load_steps=3 format=3 uid="uid://bk82el5136hn"]
+
+[ext_resource type="Texture2D" uid="uid://diy7mr4q1to0c" path="res://Art/Textures/Ruler/Ruler_LP_DefaultMaterial_BaseMap.png" id="1_2pp07"]
+[ext_resource type="Texture2D" uid="uid://dmntvv6u142o2" path="res://Art/Textures/Ruler/Ruler_LP_DefaultMaterial_MaskMap.png" id="2_fuefw"]
+
+[resource]
+albedo_texture = ExtResource("1_2pp07")
+orm_texture = ExtResource("2_fuefw")
