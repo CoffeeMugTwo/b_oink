@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://btyfwa560we0l"]
+
+[ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="1_dq3l8"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_q4oy6"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="B-Oink!_Wall" instance=ExtResource("1_dq3l8")]
+
+[node name="Plane" parent="." index="0"]
+surface_material_override/0 = SubResource("ORMMaterial3D_q4oy6")

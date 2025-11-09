@@ -8,5 +8,4 @@
 albedo_texture = ExtResource("1_huxlv")
 orm_texture = ExtResource("3_06utb")
 normal_enabled = true
-normal_scale = 0.15
 normal_texture = ExtResource("2_wf1ns")

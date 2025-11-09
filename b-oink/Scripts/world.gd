@@ -7,6 +7,9 @@ var cameraLvl1 = Vector3(9.3, 4.5, 7.7)
 var cameraLvl2 = Vector3(23.2, 6.4, 7.7)
 var cameraLvl3 = Vector3(39.7, 10.7, 7.7)
 var cameraLvl4 = Vector3(55.8, 13.4, 7.7)
+var cameraLvl5 = Vector3(61.1, 13.5, 7.7)
+var cameraLvl6 = Vector3(79.4, 19.2, 7.7)
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -52,3 +55,21 @@ func respawn() -> void:
 	pButt.velocity = Vector3(0,0,0)
 	pHead.global_position = spawnPoint + Vector3(0.25, 0, 0)
 	pButt.global_position = spawnPoint
+
+
+func _on_death_box_1_1_player_entered_box() -> void:
+	respawn()
+
+
+func _on_death_box_floor_player_entered_box() -> void:
+	respawn()
+
+
+func _on_level_5_box_all_players_inside() -> void:
+	camera.global_position = cameraLvl5
+	spawnPoint = Vector3(57, 11.9, 0)
+
+
+func _on_level_6_box_all_players_inside() -> void:
+	camera.global_position = cameraLvl6
+	spawnPoint = Vector3(71.2, 16, 0)

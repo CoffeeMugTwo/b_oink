@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://c12rwdhvobuir"]
+[gd_scene load_steps=58 format=3 uid="uid://c12rwdhvobuir"]
 
 [ext_resource type="PackedScene" uid="uid://dql7vvv1oixh3" path="res://Art/Models/B-Oink!_Bar_Straight_wood_LP.fbx" id="1_5cjrv"]
 [ext_resource type="Script" uid="uid://dyvc74m7cohq8" path="res://Scripts/world.gd" id="1_r0dna"]
@@ -17,9 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://blaj83ljd7ftn" path="res://Art/Models/Curtain_LP.gltf" id="14_8l3nt"]
 [ext_resource type="PackedScene" uid="uid://p0uyi8jieasc" path="res://Art/Models/Chair_LP.gltf" id="15_kwl8l"]
 [ext_resource type="PackedScene" uid="uid://djx6htad3ovwe" path="res://Art/Models/Teddy_LP.gltf" id="16_xiqgv"]
-[ext_resource type="PackedScene" uid="uid://xdjn8j01vrus" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="17_waglr"]
+[ext_resource type="PackedScene" uid="uid://doaeowvopsl7f" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="17_waglr"]
 [ext_resource type="PackedScene" uid="uid://c1vloahd8enej" path="res://Art/Models/B-Oink!_Domino_LP.fbx" id="18_rwt1y"]
-[ext_resource type="PackedScene" uid="uid://cbutrd7rji0r1" path="res://Scenes/players_inside_area.tscn" id="20_b5aes"]
+[ext_resource type="PackedScene" path="res://Scenes/players_inside_area.tscn" id="20_b5aes"]
 [ext_resource type="PackedScene" uid="uid://coyts0axxhns0" path="res://Art/Models/Jengaturm_LP.gltf" id="21_w0bku"]
 [ext_resource type="PackedScene" uid="uid://0rdhewf3at8i" path="res://Art/Models/Desk_LP_V2.gltf" id="22_0ao37"]
 [ext_resource type="PackedScene" uid="uid://b4hbt64h3djeq" path="res://Art/Models/Bookshelf_LP.gltf" id="23_w86vl"]
@@ -27,6 +27,17 @@
 [ext_resource type="PackedScene" uid="uid://sjppc6ta3232" path="res://Art/Models/Pixarball_LP_V2.gltf" id="25_g01fq"]
 [ext_resource type="PackedScene" uid="uid://c6vyp5ewi122u" path="res://Art/Models/Buchstabenklotz_LP.gltf" id="26_0bcf6"]
 [ext_resource type="PackedScene" uid="uid://drthyjvgoa3dt" path="res://Art/Models/Jengastein_LP.gltf" id="27_33kev"]
+[ext_resource type="PackedScene" uid="uid://bivu35qbfgpeh" path="res://Art/Models/Vent.gltf" id="28_g01fq"]
+[ext_resource type="PackedScene" uid="uid://btyfwa560we0l" path="res://Art/Alternate_Models/b_oink!_wall_vent.tscn" id="29_0bcf6"]
+[ext_resource type="PackedScene" uid="uid://cq5roeo4imj30" path="res://Art/Models/Ruler_LP_V2.gltf" id="30_y1bqn"]
+[ext_resource type="PackedScene" uid="uid://djaf3yfo8pp0u" path="res://Art/Models/Book_Var.fbx" id="31_ao4cr"]
+[ext_resource type="Material" uid="uid://d10i6jroqgh1i" path="res://Art/Materials/Book_Var_01.tres" id="32_irg3d"]
+[ext_resource type="Material" uid="uid://bw7qipx6msj4h" path="res://Art/Materials/Book_var_04.tres" id="33_y8a40"]
+[ext_resource type="Material" uid="uid://cfib74uweh83r" path="res://Art/Materials/Book_Var_02.tres" id="34_irg3d"]
+[ext_resource type="Material" uid="uid://c30erb4pt6sdn" path="res://Art/Materials/Book_var_03.tres" id="34_n1aqv"]
+[ext_resource type="PackedScene" uid="uid://dhxpy6bgiwbuw" path="res://Art/Models/Floppydisk_LP.fbx" id="36_y8a40"]
+[ext_resource type="PackedScene" uid="uid://dxw8mt3umt2c" path="res://Art/Models/Sock_LP_V2.gltf" id="37_n1aqv"]
+[ext_resource type="PackedScene" uid="uid://1d844lm2eee2" path="res://Art/Models/Poster_V2.gltf" id="38_d2jk0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -39,7 +50,7 @@ size = Vector3(1, 0.93078613, 1)
 radius = 0.5332031
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q2d71"]
-size = Vector3(1, 0.47460938, 1)
+size = Vector3(1, 1.0082397, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kn06e"]
 
@@ -71,6 +82,15 @@ size = Vector3(2.7216797, 1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0bcf6"]
 size = Vector3(3.8967285, 1, 4.9009094)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7dsfl"]
+size = Vector3(1.9945068, 0.2059021, 8.690002)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d2jk0"]
+size = Vector3(0.70010376, 0.184906, 0.93408203)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n1aqv"]
+size = Vector3(0.19398499, 0.018127441, 0.21331787)
 
 [node name="World" type="Node3D"]
 script = ExtResource("1_r0dna")
@@ -254,7 +274,7 @@ transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0
 shape = SubResource("BoxShape3D_5nsto")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.163909, 5.52963, 7.7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.167885, 21.326899, 7.7)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.07303497, -0.47181213, 0.87866914, 0.25164002, 0.86123455, 0.4415341, -0.9650612, 0.18886085, 0.18162705, 28.295916, 7.9920297, 6.2795568)
@@ -1187,7 +1207,8 @@ shape = SubResource("BoxShape3D_q2d71")
 transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
 
 [node name="EndZone" parent="." instance=ExtResource("20_b5aes")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 14.229139, 30.718573, 0)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 86.432686, 24.85533, -0.68490744)
+visible = false
 
 [node name="JengaTurm" type="StaticBody3D" parent="."]
 transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 39.720016, 1.4724302, -2.5507295)
@@ -1392,14 +1413,15 @@ transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0,
 [node name="B-Oink!_Wall" parent="Wall52" instance=ExtResource("3_5nsto")]
 
 [node name="Bookshelf" type="StaticBody3D" parent="."]
-transform = Transform3D(-3.278354e-07, 0, -15, 0, 15, 0, 7.5, 0, -6.556708e-07, 74.5177, 0, -5.1068845)
+transform = Transform3D(-2.84124e-07, 0, -13, 0, 13, 0, 6.5, 0, -5.68248e-07, 74.5177, 0, -5.1068845)
 
 [node name="Bookshelf_LP" parent="Bookshelf" instance=ExtResource("23_w86vl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00035387278, 0, -0.00021600723)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bookshelf"]
 
 [node name="Teddy_LP2" parent="Bookshelf" instance=ExtResource("16_xiqgv")]
-transform = Transform3D(0.99035764, 0, -0.06926672, 0, 0.4999999, 0, 0.13853353, 0, 0.49517882, 0.19681, 1.3218045, 0.08924103)
+transform = Transform3D(0.9903576, 0, -0.0692667, 0, 0.49999988, 0, 0.13853352, 0, 0.4951788, 0.24401441, 1.0455431, 0.871438)
 
 [node name="Telefon" type="StaticBody3D" parent="."]
 transform = Transform3D(-9.527357, 0, -3.0380034, 0, 10, 0, 3.0380034, 0, -9.527357, 54.89498, 8.008392, -0.043780446)
@@ -1416,7 +1438,7 @@ transform = Transform3D(0.244881, -0.14770044, -0.090631574, 0.15504013, 0.25680
 shape = SubResource("BoxShape3D_33kev")
 
 [node name="Pixarball_LP_V2" parent="." instance=ExtResource("25_g01fq")]
-transform = Transform3D(0.5285932, -0.28664255, -0.35836482, 0, 0.54664487, -0.43724066, 0.45890006, 0.33017492, 0.41278964, 65.776596, 10.470605, -3.4434896)
+transform = Transform3D(0.5285932, -0.28664255, -0.35836482, 0, 0.54664487, -0.43724066, 0.45890006, 0.33017492, 0.41278964, 65.04219, 9.125233, -3.4434896)
 
 [node name="Buchstabenklotz" type="StaticBody3D" parent="."]
 transform = Transform3D(0.4778837, 0, -0.14706184, 0, 0.5, 0, 0.14706184, 0, 0.4778837, 35.541412, 5.5817294, 0)
@@ -1472,7 +1494,7 @@ transform = Transform3D(-3.6053056e-08, -0.8247978, -0.5654278, 1, -4.371139e-08
 transform = Transform3D(-3.3204206e-08, 0.7596237, -0.25094208, -0.80000013, -3.496912e-08, 0, -1.0969027e-08, 0.25094205, 0.7596236, 34.23835, 2.0023417, 0.72822034)
 
 [node name="Buchstabenklotz2" type="StaticBody3D" parent="."]
-transform = Transform3D(-0.45997235, 0, -0.1960241, 0, 0.5, 0, 0.1960241, 0, -0.45997235, 35.42555, 6.817176, 0.32078767)
+transform = Transform3D(-0.45997235, 0, -0.1960241, 0, 0.5, 0, 0.1960241, 0, -0.45997235, 35.42555, 6.623708, 0.32078767)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz2"]
 transform = Transform3D(1.7710309, 0, -0.68807524, 0, 1.8999997, 0, 0.68807524, 0, 1.7710309, -0.83969116, 1.0086422, 0.11783981)
@@ -1482,7 +1504,7 @@ shape = SubResource("BoxShape3D_y1bqn")
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.9536514, 0, 0.08409119)
 
 [node name="Buchstabenklotz3" type="StaticBody3D" parent="."]
-transform = Transform3D(0.09058567, 0, 0.49172577, 0, 0.5, 0, -0.49172577, 0, 0.09058567, 36.333904, 7.832656, -0.22575188)
+transform = Transform3D(0.09058567, 0, 0.49172577, 0, 0.5, 0, -0.49172577, 0, 0.09058567, 36.333904, 7.614025, -0.22575188)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz3"]
 transform = Transform3D(1.7778118, 0, 0.6703615, 0, 1.9, 0, -0.6703615, 0, 1.7778118, -0.64815426, 1.009018, 0.19945526)
@@ -1502,26 +1524,252 @@ shape = SubResource("BoxShape3D_y1bqn")
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
 
 [node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4, 2, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 71.2, 16, 0)
 
 [node name="Level1Box" parent="." instance=ExtResource("20_b5aes")]
 transform = Transform3D(7.7261443, 0, 0, 0, 6.1031995, 0, 0, 0, 3.182701, 5.735944, -0.41130066, 0)
+visible = false
 
 [node name="Level2Box" parent="." instance=ExtResource("20_b5aes")]
 transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 21.605658, -0.19529009, 0)
+visible = false
 
 [node name="Level3Box" parent="." instance=ExtResource("20_b5aes")]
 transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 37.708492, -0.26858282, 0)
+visible = false
 
 [node name="Level4Box" parent="." instance=ExtResource("20_b5aes")]
-transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 53.92323, -0.20116329, 0)
+transform = Transform3D(2.6764398, 0, 0, 0, 6, 0, 0, 0, 3, 48.454155, -0.20116329, 0)
+visible = false
+
+[node name="Level5Box" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(8.132896, 0, 0, 0, 12.832864, 0, 0, 0, 3, 59.153694, 0.08037472, 0)
+visible = false
+
+[node name="Level6Box" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(8.486825, 0, 0, 0, 6.63558, 0, 0, 0, 3, 76.769424, 14.425375, 0)
+visible = false
 
 [node name="DeathBox1" parent="." instance=ExtResource("20_b5aes")]
-transform = Transform3D(5.6906524, 0, 0, 0, 1, 0, 0, 0, 3.0131168, 24.878727, 0, 0)
+transform = Transform3D(7.946912, 0, 0, 0, 0.7164909, 0, 0, 0, 3.0131168, 24.878727, 0, 0)
+visible = false
+
+[node name="DeathBox1_1" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(0.24868983, 0, 0, 0, 2.2794907, 0, 0, 0, 2.626694, 31.03508, 0.63352346, 0)
+visible = false
+
+[node name="Wall53" type="StaticBody3D" parent="."]
+transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 54.537415, 25.055897, -4.4634533)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall53"]
+
+[node name="B-Oink!_Wall" parent="Wall53" instance=ExtResource("3_5nsto")]
+
+[node name="Vent" parent="." instance=ExtResource("28_g01fq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.20302, 28.29294, -4.382607)
+
+[node name="Wall54" type="StaticBody3D" parent="."]
+transform = Transform3D(1.9106855e-15, -4.371139e-08, -1, -1, -4.371139e-08, 0, -4.371139e-08, 1, -4.371139e-08, 86.19049, 34.432743, -4.443921)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall54"]
+
+[node name="B-Oink!_Wall" parent="Wall54" instance=ExtResource("29_0bcf6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1732407, 0, 0)
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 62.176544, 13.7775755, -0.94742614)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6291962, -1.7254333, 0.15429306)
+shape = SubResource("BoxShape3D_7dsfl")
+
+[node name="Ruler_LP_V2" parent="StaticBody3D3" instance=ExtResource("30_y1bqn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5799866, -1.8013878, -0.34272182)
+
+[node name="Book_Var" parent="." instance=ExtResource("31_ao4cr")]
+transform = Transform3D(0.107507944, 0, -6.999174, 0, 7, 0, 6.999174, 0, 0.107507944, 69.89847, 12.6989765, -3.2624857)
+
+[node name="Book_LP" parent="Book_Var" index="0"]
+surface_material_override/0 = ExtResource("32_irg3d")
+
+[node name="Book_Var2" parent="." instance=ExtResource("31_ao4cr")]
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, 64.747696, 14.6346655, 0)
+
+[node name="Book_LP" parent="Book_Var2" index="0"]
+transform = Transform3D(-4.3711398e-06, -4.371139e-06, -100.00004, 0, 100.00004, -4.371139e-06, 100.00004, -1.9106858e-13, -4.3711398e-06, 0.7216091, -0.16284156, -0.4031653)
+surface_material_override/0 = ExtResource("33_y8a40")
+
+[node name="Book_Var3" parent="." instance=ExtResource("31_ao4cr")]
+transform = Transform3D(-1.8117332, 0, -6.761481, 0, 7, 0, 6.761481, 0, -1.8117332, 70.187546, 15.006049, -2.7731078)
+
+[node name="Book_LP" parent="Book_Var3" index="0"]
+surface_material_override/0 = ExtResource("34_irg3d")
+
+[node name="Buch" type="StaticBody3D" parent="."]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 70.057144, 14.180087, -1.090398)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buch"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.012321472, 0.04549861, -0.01647956)
+shape = SubResource("BoxShape3D_d2jk0")
+
+[node name="Book_Var" parent="Buch" instance=ExtResource("31_ao4cr")]
+
+[node name="Book_LP" parent="Buch/Book_Var" index="0"]
+surface_material_override/0 = ExtResource("34_n1aqv")
+
+[node name="Block16" type="StaticBody3D" parent="."]
+transform = Transform3D(-0.28764537, 0, 0.40897447, 0, 0.5, 0, -0.40897447, 0, -0.28764537, 40.51783, 11.741812, -0.18504989)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block16"]
+transform = Transform3D(1.9500003, 0, 5.9604645e-08, 0, 1.95, 0, -5.9604645e-08, 0, 1.9500003, 0, 1.0136242, 0)
+shape = SubResource("BoxShape3D_q2d71")
+
+[node name="B-Oink!_Buldingblock_cube_LP2" parent="Block16" instance=ExtResource("8_kn06e")]
+
+[node name="Block17" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.942177, 9.114362, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block17"]
+transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
+shape = SubResource("CylinderShape3D_p70al")
+
+[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block17" instance=ExtResource("4_gjpho")]
+
+[node name="Floppy" type="StaticBody3D" parent="."]
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 57.42809, 11.161653, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floppy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0010604858, -0.0043792725, 0.016868114)
+shape = SubResource("BoxShape3D_n1aqv")
+
+[node name="Floppydisk_LP" parent="Floppy" instance=ExtResource("36_y8a40")]
+
+[node name="Buch2" type="StaticBody3D" parent="."]
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 77.95792, 16.456482, -1.3944509)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buch2"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.012321472, 0.04549861, -0.01647956)
+shape = SubResource("BoxShape3D_d2jk0")
+
+[node name="Book_Var" parent="Buch2" instance=ExtResource("31_ao4cr")]
+
+[node name="Book_LP" parent="Buch2/Book_Var" index="0"]
+surface_material_override/0 = ExtResource("34_n1aqv")
+
+[node name="Block18" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.83017, 0, 0, 0, 1, 77.13631, 17.611774, -4.2787485)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block18"]
+transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
+shape = SubResource("CylinderShape3D_p70al")
+
+[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block18" instance=ExtResource("4_gjpho")]
+
+[node name="Block19" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.83017, 0, 0, 0, 1, 79.04338, 17.611774, -4.2787485)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block19"]
+transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
+shape = SubResource("CylinderShape3D_p70al")
+
+[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block19" instance=ExtResource("4_gjpho")]
+
+[node name="Buch3" type="StaticBody3D" parent="."]
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 83.61637, 19.960585, -1.3944509)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buch3"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.012321472, 0.04549861, -0.01647956)
+shape = SubResource("BoxShape3D_d2jk0")
+
+[node name="Book_Var" parent="Buch3" instance=ExtResource("31_ao4cr")]
+
+[node name="Book_LP" parent="Buch3/Book_Var" index="0"]
+surface_material_override/0 = ExtResource("34_n1aqv")
+
+[node name="Block20" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.83017, 0, 0, 0, 1, 82.79476, 21.115877, -4.2787485)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block20"]
+transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
+shape = SubResource("CylinderShape3D_p70al")
+
+[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block20" instance=ExtResource("4_gjpho")]
+transform = Transform3D(1, 0, 0, 0, 1.234662, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Block21" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.83017, 0, 0, 0, 1, 84.701836, 21.115877, -4.2787485)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block21"]
+transform = Transform3D(1.4, 0, 0, 0, 0.98627263, 0, 0, 0, 1.4, 0, 1.010469, 0)
+shape = SubResource("CylinderShape3D_p70al")
+
+[node name="B-Oink!_Buldingblock_cylinder_LP" parent="Block21" instance=ExtResource("4_gjpho")]
+transform = Transform3D(1, 0, 0, 0, 1.2887415, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Buchstabenklotz5" type="StaticBody3D" parent="."]
+transform = Transform3D(0.4778837, 0, -0.14706184, 0, 0.5, 0, 0.14706184, 0, 0.4778837, 84.29229, 21.15932, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz5"]
+transform = Transform3D(1.8205198, 0, 0.5437931, 0, 1.8999999, 0, -0.5437931, 0, 1.8205198, -0.9171829, 0.9923487, 0.28225708)
+shape = SubResource("BoxShape3D_y1bqn")
+
+[node name="Buchstabenklotz_LP2" parent="Buchstabenklotz5" instance=ExtResource("26_0bcf6")]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
+
+[node name="Buchstabenklotz6" type="StaticBody3D" parent="."]
+transform = Transform3D(-0.45997235, 0, -0.1960241, 0, 0.5, 0, 0.1960241, 0, -0.45997235, 84.17642, 22.218992, 0.32078767)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz6"]
+transform = Transform3D(1.7710309, 0, -0.68807524, 0, 1.8999997, 0, 0.68807524, 0, 1.7710309, -0.83969116, 1.0086422, 0.11783981)
+shape = SubResource("BoxShape3D_y1bqn")
+
+[node name="Buchstabenklotz_LP2" parent="Buchstabenklotz6" instance=ExtResource("26_0bcf6")]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.9536514, 0, 0.08409119)
+
+[node name="Buchstabenklotz7" type="StaticBody3D" parent="."]
+transform = Transform3D(0.09058567, 0, 0.49172577, 0, 0.5, 0, -0.49172577, 0, 0.09058567, 85.08478, 23.222345, -0.22575188)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz7"]
+transform = Transform3D(1.7778118, 0, 0.6703615, 0, 1.9, 0, -0.6703615, 0, 1.7778118, -0.64815426, 1.009018, 0.19945526)
+shape = SubResource("BoxShape3D_y1bqn")
+
+[node name="Buchstabenklotz_LP2" parent="Buchstabenklotz7" instance=ExtResource("26_0bcf6")]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
+
+[node name="Buchstabenklotz8" type="StaticBody3D" parent="."]
+transform = Transform3D(0.3387205, 0, 0.36778855, 0, 0.5, 0, -0.36778855, 0, 0.3387205, 85.42126, 21.15932, -0.50794995)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Buchstabenklotz8"]
+transform = Transform3D(1.8999997, 0, 2.9802322e-07, 0, 1.9, 0, -2.9802322e-07, 0, 1.8999997, -0.6481552, 1.0372853, 0.19946003)
+shape = SubResource("BoxShape3D_y1bqn")
+
+[node name="Buchstabenklotz_LP2" parent="Buchstabenklotz8" instance=ExtResource("26_0bcf6")]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
+
+[node name="DeathBoxFloor" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(50, 0, 0, 0, 0.572, 0, 0, 0, 2.627, 67.5677, -0.035757303, 0)
+visible = false
+
+[node name="Sock_LP_V2" parent="." instance=ExtResource("37_n1aqv")]
+transform = Transform3D(-6.290698, 4.0434203, 13.002995, 12.691054, 6.9329324, 3.9839153, -4.9360156, 12.672222, -6.32855, 85.90445, 25.942888, -3.008633)
+
+[node name="Poster_V2" parent="." instance=ExtResource("38_d2jk0")]
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 25.022669, 7.6961126, -4.2472463)
 
 [connection signal="all_players_inside" from="EndZone" to="." method="_on_end_zone_all_players_inside"]
 [connection signal="all_players_inside" from="Level1Box" to="." method="_on_level_1_box_all_players_inside"]
 [connection signal="all_players_inside" from="Level2Box" to="." method="_on_level_2_box_all_players_inside"]
 [connection signal="all_players_inside" from="Level3Box" to="." method="_on_level_3_box_all_players_inside"]
 [connection signal="all_players_inside" from="Level4Box" to="." method="_on_level_4_box_all_players_inside"]
+[connection signal="all_players_inside" from="Level5Box" to="." method="_on_level_5_box_all_players_inside"]
+[connection signal="all_players_inside" from="Level6Box" to="." method="_on_level_6_box_all_players_inside"]
 [connection signal="player_entered_box" from="DeathBox1" to="." method="_on_death_box_1_player_entered_box"]
+[connection signal="player_entered_box" from="DeathBox1_1" to="." method="_on_death_box_1_1_player_entered_box"]
+[connection signal="player_entered_box" from="DeathBoxFloor" to="." method="_on_death_box_floor_player_entered_box"]
+
+[editable path="Book_Var"]
+[editable path="Book_Var2"]
+[editable path="Book_Var3"]
+[editable path="Buch/Book_Var"]
+[editable path="Buch2/Book_Var"]
+[editable path="Buch3/Book_Var"]
