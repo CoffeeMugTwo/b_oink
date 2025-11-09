@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://bsn5fg5jp2na6" path="res://Art/Alternate_Models/b_oink!_buldingblock_cube_lp_yellow.tscn" id="9_p5ob5"]
 [ext_resource type="PackedScene" uid="uid://u28a0yy4v4c2" path="res://Art/Models/B-Oink!_Luggage_LP_.fbx" id="10_icgjy"]
 [ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_wcdqp"]
-[ext_resource type="PackedScene" uid="uid://cx2orq7ptvcx1" path="res://Scenes/workbench/spring_test_code.tscn" id="11_l0hd3"]
 [ext_resource type="AudioStream" uid="uid://o6rwhgeigip6" path="res://Musik/B_oink3.mp3" id="12_icgjy"]
+[ext_resource type="PackedScene" uid="uid://ci3tlspl344se" path="res://Scenes/characters_new.tscn" id="12_l0hd3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -470,8 +470,8 @@ transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99
 [node name="B-Oink!_Luggage_LP_" parent="Lagguage" instance=ExtResource("10_icgjy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.657364, 0.57459736, 0)
 
-[node name="spring_engine_code_test" parent="." instance=ExtResource("11_l0hd3")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4.257451, 0, 0)
+[node name="Characters" parent="." instance=ExtResource("12_l0hd3")]
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 6.8402214, 3.7977695, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_icgjy")

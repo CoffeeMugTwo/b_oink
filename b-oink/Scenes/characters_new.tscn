@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://ci3tlspl344se"]
+
+[ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="1_cwsht"]
+[ext_resource type="Script" uid="uid://deodm06gxxjcy" path="res://Scripts/characters_new.gd" id="1_ght78"]
+[ext_resource type="Script" uid="uid://cy3a1obbtgn8g" path="res://Scripts/player_back_movement.gd" id="2_0j44g"]
+[ext_resource type="PackedScene" uid="uid://0mbnt1xmnrvx" path="res://Art/Models/B-Oink!_Char_front.fbx" id="2_ght78"]
+[ext_resource type="PackedScene" uid="uid://d0ekkiqqjq7a0" path="res://Art/Models/B-Oink!_Char_Spring_LP_v2.fbx" id="3_ad6pf"]
+[ext_resource type="Script" uid="uid://c5mgaxraxxg0v" path="res://Scripts/player_head_movement.gd" id="4_j04ua"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0j44g"]
+height = 3.3376465
+radius = 1.1523438
+
+[node name="Characters" type="Node3D"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+script = ExtResource("1_ght78")
+
+[node name="PlayerBack" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2812657e-07, 0, 2.9311943)
+script = ExtResource("2_0j44g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerBack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6688232, -0.046000004)
+shape = SubResource("CylinderShape3D_0j44g")
+
+[node name="B-Oink!_Char_LP_back_v2" parent="PlayerBack" instance=ExtResource("1_cwsht")]
+
+[node name="PlayerHead" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1860108e-07, 0, -2.7132764)
+script = ExtResource("4_j04ua")
+
+[node name="B-Oink!_Char_front" parent="PlayerHead" instance=ExtResource("2_ght78")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerHead"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.498464e-10, 1.6688232, -0.03342104)
+shape = SubResource("CylinderShape3D_0j44g")
+
+[node name="Spring" type="MeshInstance3D" parent="."]
+
+[node name="B-Oink!_Char_Spring_LP_v2" parent="Spring" instance=ExtResource("3_ad6pf")]
