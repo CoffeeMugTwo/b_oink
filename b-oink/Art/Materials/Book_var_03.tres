@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=5 format=3 uid="uid://c30erb4pt6sdn"]
+
+[ext_resource type="Texture2D" uid="uid://c2l032eauf3cx" path="res://Art/Textures/Books_Var/Maps_03/Book_LP_DefaultMaterial_BaseColor.png" id="1_baj0p"]
+[ext_resource type="Texture2D" uid="uid://dm72suhp1kcw" path="res://Art/Textures/Books_Var/Maps_03/Book_LP_DefaultMaterial_Metallic.png" id="2_ovbge"]
+[ext_resource type="Texture2D" uid="uid://dgfernvtarj6x" path="res://Art/Textures/Books_Var/Maps_03/Book_LP_DefaultMaterial_Normal.png" id="3_acpw1"]
+[ext_resource type="Texture2D" uid="uid://ds5g0cvfjfw5m" path="res://Art/Textures/Books_Var/Maps_03/Book_LP_DefaultMaterial_Roughness.png" id="4_ymim3"]
+
+[resource]
+albedo_texture = ExtResource("1_baj0p")
+metallic = 1.0
+metallic_texture = ExtResource("2_ovbge")
+roughness_texture = ExtResource("4_ymim3")
+normal_enabled = true
+normal_texture = ExtResource("3_acpw1")

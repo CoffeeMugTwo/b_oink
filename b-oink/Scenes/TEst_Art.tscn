@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://i43aut0vc512"]
+[gd_scene load_steps=33 format=3 uid="uid://i43aut0vc512"]
 
 [ext_resource type="PackedScene" uid="uid://vv065mcc2cc0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="1_wlm07"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="2_c83vi"]
@@ -27,6 +27,10 @@
 [ext_resource type="Material" uid="uid://8r3vnp3cabll" path="res://Art/Materials/DEsk.tres" id="25_f544f"]
 [ext_resource type="PackedScene" uid="uid://c8ckjxadhj2ky" path="res://Art/Models/Vent.gltf" id="26_q0dn3"]
 [ext_resource type="Material" uid="uid://co63x414sibia" path="res://Art/Materials/Vent.tres" id="27_mbkco"]
+[ext_resource type="PackedScene" uid="uid://cyiyutlpc6akx" path="res://Art/Models/Ruler_LP_V2.gltf" id="28_h7ltu"]
+[ext_resource type="Material" uid="uid://bk82el5136hn" path="res://Art/Materials/Ruler.tres" id="29_wrw55"]
+[ext_resource type="PackedScene" uid="uid://djaf3yfo8pp0u" path="res://Art/Models/Book_Var.fbx" id="30_fibjl"]
+[ext_resource type="Material" uid="uid://bw7qipx6msj4h" path="res://Art/Materials/Book_var_04.tres" id="31_0id8n"]
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_wlm07"]
 exposure_multiplier = 0.895
@@ -263,6 +267,20 @@ material_override = ExtResource("27_mbkco")
 [node name="Cube_005" parent="Vent/ROOT" index="6"]
 material_override = ExtResource("27_mbkco")
 
+[node name="Ruler_LP_V2" parent="." instance=ExtResource("28_h7ltu")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -2.9938664, 0, 7.692609)
+
+[node name="Cube" parent="Ruler_LP_V2" index="0"]
+material_override = ExtResource("29_wrw55")
+
+[node name="Book_Var" parent="." instance=ExtResource("30_fibjl")]
+transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, -4.0158873, 0, 5.4725456)
+
+[node name="Book_LP" parent="Book_Var" index="0"]
+material_override = ExtResource("31_0id8n")
+
 [editable path="Luggage_LP_cd"]
 [editable path="Desk_LP_V2"]
 [editable path="Vent"]
+[editable path="Ruler_LP_V2"]
+[editable path="Book_Var"]
