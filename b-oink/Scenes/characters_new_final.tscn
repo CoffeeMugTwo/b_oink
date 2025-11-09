@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=3 uid="uid://cih7mgyitoovo"]
+
+[ext_resource type="Script" uid="uid://deodm06gxxjcy" path="res://Scripts/characters_new.gd" id="1_bq826"]
+[ext_resource type="Script" uid="uid://ba0eq4fps50ha" path="res://Scenes/workbench/spring_manager_node.gd" id="2_t3t16"]
+[ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="3_4ebvh"]
+[ext_resource type="Script" uid="uid://d0g2y6dik16tn" path="res://Scenes/workbench/butt_code.gd" id="3_go5h1"]
+[ext_resource type="Script" uid="uid://p8ylv0s4q3qj" path="res://Scenes/workbench/head.gd" id="5_3jsky"]
+[ext_resource type="PackedScene" uid="uid://0mbnt1xmnrvx" path="res://Art/Models/B-Oink!_Char_front.fbx" id="5_qcvko"]
+[ext_resource type="PackedScene" uid="uid://d0ekkiqqjq7a0" path="res://Art/Models/B-Oink!_Char_Spring_LP_v2.fbx" id="6_3jsky"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0j44g"]
+height = 3.3376465
+radius = 1.1523438
+
+[node name="Characters" type="Node3D"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+script = ExtResource("1_bq826")
+
+[node name="spring_manager" type="Node" parent="." node_paths=PackedStringArray("a", "b", "anchor_a", "anchor_b")]
+script = ExtResource("2_t3t16")
+a = NodePath("../PlayerHead")
+b = NodePath("../PlayerBack")
+anchor_a = NodePath("../PlayerHead/head_anker")
+anchor_b = NodePath("../PlayerBack/butt_anker")
+
+[node name="PlayerBack" type="CharacterBody3D" parent="." groups=["players"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2812657e-07, 0, 2.9311943)
+script = ExtResource("3_go5h1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerBack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6688232, -0.046000004)
+shape = SubResource("CylinderShape3D_0j44g")
+
+[node name="B-Oink!_Char_LP_back_v2" parent="PlayerBack" instance=ExtResource("3_4ebvh")]
+
+[node name="butt_anker" type="Marker3D" parent="PlayerBack"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.968146e-08, 2, -1.1365793)
+
+[node name="PlayerHead" type="CharacterBody3D" parent="." groups=["players"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1860108e-07, 0, -2.7132764)
+script = ExtResource("5_3jsky")
+
+[node name="B-Oink!_Char_front" parent="PlayerHead" instance=ExtResource("5_qcvko")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerHead"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.498464e-10, 1.6688232, -0.03342104)
+shape = SubResource("CylinderShape3D_0j44g")
+
+[node name="head_anker" type="Marker3D" parent="PlayerHead"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1128267e-08, 2, 0.9409051)
+
+[node name="Spring" type="MeshInstance3D" parent="."]
+
+[node name="B-Oink!_Char_Spring_LP_v2" parent="Spring" instance=ExtResource("6_3jsky")]

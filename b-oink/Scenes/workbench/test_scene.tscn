@@ -38,7 +38,7 @@ transform = Transform3D(0.12743881, 0, 0, 0, 10.654052, 0, 0, 0, 0.4884975, 0.15
 mesh = SubResource("BoxMesh_kv0vg")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.89489543, 0.4462759, 0, -0.4462759, 0.89489543, 0, 14.771788, 19.636103)
+transform = Transform3D(1, 0, 0, 0, 0.89489543, 0.4462759, 0, -0.4462759, 0.89489543, -15.602703, 2.504179, 4.5723763)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_vmsth")
@@ -58,4 +58,4 @@ mesh = SubResource("BoxMesh_xwoce")
 surface_material_override/0 = SubResource("StandardMaterial3D_xwoce")
 
 [node name="Player" parent="." instance=ExtResource("1_xwoce")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.983853, 0, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -15.983853, 0, 0)

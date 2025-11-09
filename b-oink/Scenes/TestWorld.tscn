@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://u28a0yy4v4c2" path="res://Art/Models/B-Oink!_Luggage_LP_.fbx" id="10_icgjy"]
 [ext_resource type="PackedScene" uid="uid://sffbnrgfdnup" path="res://Art/Models/B-Oink!_Buldingblock_bridge_LP.fbx" id="10_wcdqp"]
 [ext_resource type="AudioStream" uid="uid://o6rwhgeigip6" path="res://Musik/B_oink3.mp3" id="12_icgjy"]
-[ext_resource type="PackedScene" uid="uid://ci3tlspl344se" path="res://Scenes/characters_new.tscn" id="12_l0hd3"]
+[ext_resource type="PackedScene" uid="uid://cih7mgyitoovo" path="res://Scenes/characters_new_final.tscn" id="12_l0hd3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5nsto"]
 
@@ -471,7 +471,7 @@ transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.657364, 0.57459736, 0)
 
 [node name="Characters" parent="." instance=ExtResource("12_l0hd3")]
-transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 6.8402214, 3.7977695, 0)
+transform = Transform3D(-1.3113417e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.3113417e-08, 3.6140625, 0.57415605, 0)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("12_icgjy")

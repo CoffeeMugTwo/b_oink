@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cx2orq7ptvcx1"]
+[gd_scene load_steps=10 format=3 uid="uid://cx2orq7ptvcx1"]
 
 [ext_resource type="Script" uid="uid://c03wj35u8ydyt" path="res://Scenes/workbench/spring_test_code.gd" id="1_fkjml"]
 [ext_resource type="Script" uid="uid://p8ylv0s4q3qj" path="res://Scenes/workbench/head.gd" id="1_josfd"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://0mbnt1xmnrvx" path="res://Art/Models/B-Oink!_Char_front.fbx" id="4_nqheu"]
 [ext_resource type="Script" uid="uid://d0g2y6dik16tn" path="res://Scenes/workbench/butt_code.gd" id="5_nqheu"]
 [ext_resource type="PackedScene" uid="uid://bgp61nlih2pmg" path="res://Art/Models/B-Oink!_Char_LP_back_v2.fbx" id="6_hvfll"]
+[ext_resource type="PackedScene" uid="uid://d0ekkiqqjq7a0" path="res://Art/Models/B-Oink!_Char_Spring_LP_v2.fbx" id="7_hvfll"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_fkjml"]
 height = 3.4208984
@@ -50,3 +51,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2, 2, 0)
 
 [node name="B-Oink!_Char_LP_back_v2" parent="butt" instance=ExtResource("6_hvfll")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.481137, 0, 0)
+
+[node name="Spring" type="MeshInstance3D" parent="."]
+
+[node name="B-Oink!_Char_Spring_LP_v2" parent="Spring" instance=ExtResource("7_hvfll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
