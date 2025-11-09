@@ -6,7 +6,7 @@ const JUMP_VELOCITY = 4.5
 @export var spring_force : Vector3 = Vector3(0, 0 ,0)
 @export var max_input_force_scalar : float = 50.0
 @export var mass : float = 1.3
-@export var jump_force_scalar : float = 370
+@export var jump_force_scalar : float = 1000 #370
 @export var max_grab_distance : float = 0.7
 
 func _can_grab() -> bool:

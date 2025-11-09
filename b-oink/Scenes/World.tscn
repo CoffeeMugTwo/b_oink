@@ -1502,7 +1502,7 @@ shape = SubResource("BoxShape3D_y1bqn")
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
 
 [node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4, 0, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4, 2, 0)
 
 [node name="Level1Box" parent="." instance=ExtResource("20_b5aes")]
 transform = Transform3D(7.7261443, 0, 0, 0, 6.1031995, 0, 0, 0, 3.182701, 5.735944, -0.41130066, 0)
@@ -1516,8 +1516,12 @@ transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 37.708492, -0.26858282, 0)
 [node name="Level4Box" parent="." instance=ExtResource("20_b5aes")]
 transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 53.92323, -0.20116329, 0)
 
+[node name="DeathBox1" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(5.6906524, 0, 0, 0, 1, 0, 0, 0, 3.0131168, 24.878727, 0, 0)
+
 [connection signal="all_players_inside" from="EndZone" to="." method="_on_end_zone_all_players_inside"]
 [connection signal="all_players_inside" from="Level1Box" to="." method="_on_level_1_box_all_players_inside"]
 [connection signal="all_players_inside" from="Level2Box" to="." method="_on_level_2_box_all_players_inside"]
 [connection signal="all_players_inside" from="Level3Box" to="." method="_on_level_3_box_all_players_inside"]
 [connection signal="all_players_inside" from="Level4Box" to="." method="_on_level_4_box_all_players_inside"]
+[connection signal="player_entered_box" from="DeathBox1" to="." method="_on_death_box_1_player_entered_box"]

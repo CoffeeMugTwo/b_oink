@@ -19,7 +19,6 @@ func _process(_delta):
 	var distance = (pos_b - pos_a).length()
 
 	# Scale along local X (assuming spring is modeled along X)
-	print(spring.scale)
 	var s = spring.scale
 	s.z = distance * 0.5 * 0.5/0.3   # 0.5 if pivot is centered
 	spring.scale = s

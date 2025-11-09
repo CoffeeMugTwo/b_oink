@@ -10,7 +10,6 @@ func _ready() -> void:
 	connect("body_exited", _on_body_exited)
 
 func _on_body_entered(body):
-	print("Player Entered")
 	emit_signal("player_entered_box")
 	if body.is_in_group("players") and body not in players_in_zone:
 		players_in_zone.append(body)
