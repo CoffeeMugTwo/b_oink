@@ -17,9 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://blaj83ljd7ftn" path="res://Art/Models/Curtain_LP.gltf" id="14_8l3nt"]
 [ext_resource type="PackedScene" uid="uid://p0uyi8jieasc" path="res://Art/Models/Chair_LP.gltf" id="15_kwl8l"]
 [ext_resource type="PackedScene" uid="uid://djx6htad3ovwe" path="res://Art/Models/Teddy_LP.gltf" id="16_xiqgv"]
-[ext_resource type="PackedScene" uid="uid://doaeowvopsl7f" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="17_waglr"]
+[ext_resource type="PackedScene" uid="uid://xdjn8j01vrus" path="res://Art/Models/B-Oink!_Book_LP.fbx" id="17_waglr"]
 [ext_resource type="PackedScene" uid="uid://c1vloahd8enej" path="res://Art/Models/B-Oink!_Domino_LP.fbx" id="18_rwt1y"]
-[ext_resource type="PackedScene" path="res://Scenes/players_inside_area.tscn" id="20_b5aes"]
+[ext_resource type="PackedScene" uid="uid://cbutrd7rji0r1" path="res://Scenes/players_inside_area.tscn" id="20_b5aes"]
 [ext_resource type="PackedScene" uid="uid://coyts0axxhns0" path="res://Art/Models/Jengaturm_LP.gltf" id="21_w0bku"]
 [ext_resource type="PackedScene" uid="uid://0rdhewf3at8i" path="res://Art/Models/Desk_LP_V2.gltf" id="22_0ao37"]
 [ext_resource type="PackedScene" uid="uid://b4hbt64h3djeq" path="res://Art/Models/Bookshelf_LP.gltf" id="23_w86vl"]
@@ -1187,7 +1187,7 @@ shape = SubResource("BoxShape3D_q2d71")
 transform = Transform3D(0.99790883, 0, -0.06463681, 0, 1, 0, 0.06463681, 0, 0.99790883, 0, 0, 0)
 
 [node name="EndZone" parent="." instance=ExtResource("20_b5aes")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 84.696014, 30.718573, 0)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 14.229139, 30.718573, 0)
 
 [node name="JengaTurm" type="StaticBody3D" parent="."]
 transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, 39.720016, 1.4724302, -2.5507295)
@@ -1291,6 +1291,7 @@ transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0,
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall38"]
 
 [node name="B-Oink!_Wall" parent="Wall38" instance=ExtResource("3_5nsto")]
+transform = Transform3D(1, -3.5527137e-15, 0, 3.5527137e-15, 1, -3.5527137e-15, -2.1175824e-22, 3.5527137e-15, 1, 0, 3.5762787e-07, 8.230448)
 
 [node name="Wall39" type="StaticBody3D" parent="."]
 transform = Transform3D(9.553428e-15, -2.1855695e-07, -5, -5, -2.1855696e-07, 0, -2.1855696e-07, 5, -2.1855695e-07, 74.414085, 25.11885, -4.4634533)
@@ -1501,6 +1502,22 @@ shape = SubResource("BoxShape3D_y1bqn")
 transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, -0.66835403, 0, 0.20567608)
 
 [node name="spring_engine_code_test" parent="." instance=ExtResource("10_kn06e")]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.8240523, 0.69992363, 0)
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4, 0, 0)
+
+[node name="Level1Box" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(7.7261443, 0, 0, 0, 6.1031995, 0, 0, 0, 3.182701, 5.735944, -0.41130066, 0)
+
+[node name="Level2Box" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 21.605658, -0.19529009, 0)
+
+[node name="Level3Box" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 37.708492, -0.26858282, 0)
+
+[node name="Level4Box" parent="." instance=ExtResource("20_b5aes")]
+transform = Transform3D(8, 0, 0, 0, 6, 0, 0, 0, 3, 53.92323, -0.20116329, 0)
 
 [connection signal="all_players_inside" from="EndZone" to="." method="_on_end_zone_all_players_inside"]
+[connection signal="all_players_inside" from="Level1Box" to="." method="_on_level_1_box_all_players_inside"]
+[connection signal="all_players_inside" from="Level2Box" to="." method="_on_level_2_box_all_players_inside"]
+[connection signal="all_players_inside" from="Level3Box" to="." method="_on_level_3_box_all_players_inside"]
+[connection signal="all_players_inside" from="Level4Box" to="." method="_on_level_4_box_all_players_inside"]

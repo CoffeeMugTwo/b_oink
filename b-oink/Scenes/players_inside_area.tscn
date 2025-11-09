@@ -14,3 +14,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03254795, 1.0288086, 0.057
 shape = SubResource("BoxShape3D_3tvxv")
 
 [node name="B-Oink!_Buldingblock_cube_LP" parent="." instance=ExtResource("2_s23tw")]
+
+[node name="Building_Block_cube_LP" parent="B-Oink!_Buldingblock_cube_LP" index="0"]
+transparency = 0.49
+
+[editable path="B-Oink!_Buldingblock_cube_LP"]
