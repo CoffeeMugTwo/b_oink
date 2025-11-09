@@ -14,7 +14,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_pressed("respawn"):
+		respawn()
 
 func _on_end_zone_all_players_inside() -> void:
 	get_tree().change_scene_to_file("res://Scenes/win_screen.tscn")
@@ -44,6 +45,9 @@ func _on_level_4_box_all_players_inside() -> void:
 func _on_death_box_1_player_entered_box() -> void:
 	print("Entered DEathbox 1")
 	print(spawnPoint)
+	respawn()
+	
+func respawn() -> void:
 	pHead.velocity = Vector3(0,0,0)
 	pButt.velocity = Vector3(0,0,0)
 	pHead.global_position = spawnPoint + Vector3(0.25, 0, 0)

@@ -6,8 +6,10 @@ const JUMP_VELOCITY = 4.5
 @export var spring_force : Vector3 = Vector3(0, 0 ,0)
 @export var max_input_force_scalar : float = 50.0
 @export var mass : float = 1.3
-@export var jump_force_scalar : float = 1000 #370
+@export var jump_force_scalar : float = 550 #370
 @export var max_grab_distance : float = 0.7
+
+@onready var mesh_pos : CollisionShape3D = $CollisionShape3D
 
 func _can_grab() -> bool:
 	var space_state = get_world_3d().direct_space_state
@@ -15,7 +17,7 @@ func _can_grab() -> bool:
 	sphere.radius = max_grab_distance
 	var query = PhysicsShapeQueryParameters3D.new()
 	query.shape = sphere
-	query.transform.origin = global_position
+	query.transform.origin = mesh_pos.global_position
 	query.collide_with_areas = false
 	query.collide_with_bodies = true
 	
