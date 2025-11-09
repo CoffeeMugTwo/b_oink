@@ -1,6 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bppl1hwh1rbe6"]
+[gd_scene load_steps=10 format=3 uid="uid://bppl1hwh1rbe6"]
 
 [ext_resource type="PackedScene" uid="uid://cx2orq7ptvcx1" path="res://Scenes/workbench/spring_test_code.tscn" id="1_xwoce"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kv0vg"]
+size = Vector3(0.1315918, 8.369263, 0.55041504)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kv0vg"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xwoce"]
 
@@ -16,7 +21,21 @@ size = Vector3(76.01916, 1, 21.012207)
 
 [sub_resource type="BoxMesh" id="BoxMesh_xwoce"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwoce"]
+
 [node name="Node3D" type="Node3D"]
+
+[node name="Box" type="StaticBody3D" parent="."]
+transform = Transform3D(77.08701, 0, 0, 0, 1, 0, 0, 0, 21.818615, -0.01712823, -0.5505507, 0.03407955)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.157, 4.751, 0)
+shape = SubResource("BoxShape3D_kv0vg")
+debug_color = Color(16.215857, 0, 17.061005, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Box"]
+transform = Transform3D(0.12743881, 0, 0, 0, 10.654052, 0, 0, 0, 0.4884975, 0.15616092, 3.6555455, 0.0033752248)
+mesh = SubResource("BoxMesh_kv0vg")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.89489543, 0.4462759, 0, -0.4462759, 0.89489543, 0, 14.771788, 19.636103)
@@ -27,14 +46,16 @@ environment = SubResource("Environment_vmsth")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.026630547, 0.99964535, 0, -0.99964535, 0.026630547, 0, 10.735176, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="Floor" type="StaticBody3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0586424, 0, -1.5080566)
 shape = SubResource("BoxShape3D_xwoce")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-transform = Transform3D(77.08701, 0, 0, 0, 1, 0, 0, 0, 21.818615, -0.01712823, 0.034542322, 0.03407955)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(77.08701, 0, 0, 0, 1, 0, 0, 0, 21.818615, -0.01712823, -0.5505507, 0.03407955)
 mesh = SubResource("BoxMesh_xwoce")
+surface_material_override/0 = SubResource("StandardMaterial3D_xwoce")
 
-[node name="Node3D" parent="." instance=ExtResource("1_xwoce")]
+[node name="Player" parent="." instance=ExtResource("1_xwoce")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.983853, 0, 0)
