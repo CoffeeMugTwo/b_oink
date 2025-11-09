@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://i43aut0vc512"]
+[gd_scene load_steps=39 format=3 uid="uid://i43aut0vc512"]
 
 [ext_resource type="PackedScene" uid="uid://vv065mcc2cc0" path="res://Art/Models/B-Oink!_Floor_boards.fbx" id="1_wlm07"]
 [ext_resource type="PackedScene" uid="uid://cqjfh8efwvg1" path="res://Art/Models/B-Oink!_Wall.fbx" id="2_c83vi"]
@@ -33,6 +33,10 @@
 [ext_resource type="Material" uid="uid://bw7qipx6msj4h" path="res://Art/Materials/Book_var_04.tres" id="31_0id8n"]
 [ext_resource type="PackedScene" uid="uid://dhxpy6bgiwbuw" path="res://Art/Models/Floppydisk_LP.fbx" id="32_fibjl"]
 [ext_resource type="Material" uid="uid://c2gu0p5w5w7oa" path="res://Art/Materials/Floppydisk.tres" id="33_0id8n"]
+[ext_resource type="PackedScene" uid="uid://c2r0hi2ett2w5" path="res://Art/Models/Sock_LP_V2.gltf" id="34_v35v2"]
+[ext_resource type="Material" uid="uid://bwmormohy1r7l" path="res://Art/Materials/Sock.tres" id="35_g5cix"]
+[ext_resource type="PackedScene" uid="uid://qwg0hixv76u2" path="res://Art/Models/Poster_V2.gltf" id="36_os6nl"]
+[ext_resource type="Material" uid="uid://dod43cebv4fgq" path="res://Art/Materials/Poster.tres" id="37_kkfxv"]
 
 [sub_resource type="CameraAttributesPhysical" id="CameraAttributesPhysical_wlm07"]
 exposure_multiplier = 0.895
@@ -287,9 +291,23 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -4.763391, 0, 8.198531)
 [node name="Disk_LP" parent="Floppydisk_LP" index="0"]
 material_override = ExtResource("33_0id8n")
 
+[node name="Sock_LP_V2" parent="Floppydisk_LP" instance=ExtResource("34_v35v2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1664007, 0, 0.09873617)
+
+[node name="Sock_LP" parent="Floppydisk_LP/Sock_LP_V2" index="0"]
+material_override = ExtResource("35_g5cix")
+
+[node name="Poster_V2" parent="Floppydisk_LP" instance=ExtResource("36_os6nl")]
+transform = Transform3D(0.07071068, 0, -0.07071068, 0, 0.1, 0, 0.07071068, 0, 0.07071068, 0.24816932, 0.09248638, 0.024305522)
+
+[node name="Plane" parent="Floppydisk_LP/Poster_V2" index="0"]
+material_override = ExtResource("37_kkfxv")
+
 [editable path="Luggage_LP_cd"]
 [editable path="Desk_LP_V2"]
 [editable path="Vent"]
 [editable path="Ruler_LP_V2"]
 [editable path="Book_Var"]
 [editable path="Floppydisk_LP"]
+[editable path="Floppydisk_LP/Sock_LP_V2"]
+[editable path="Floppydisk_LP/Poster_V2"]

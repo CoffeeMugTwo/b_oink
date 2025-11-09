@@ -1,0 +1,164 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v3.1.137539927)"
+    },
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 197,
+            "type": "VEC3",
+            "max": [
+                0.09435684233903885,
+                0.12835510075092317,
+                0.14314128458499909
+            ],
+            "min": [
+                -0.13458213210105897,
+                -0.08864407986402512,
+                -0.019323792308568956
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 197,
+            "type": "VEC3",
+            "max": [
+                0.9939255714416504,
+                0.9355210065841675,
+                0.9875715970993042
+            ],
+            "min": [
+                -0.9846092462539673,
+                -0.9811875820159912,
+                -0.9845690727233887
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 197,
+            "type": "VEC4",
+            "max": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -0.9800819158554077,
+                -0.9829615354537964,
+                -0.9943023920059204,
+                -0.9800819158554077
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 197,
+            "type": "VEC2",
+            "max": [
+                0.9851957559585571,
+                0.9990000128746033
+            ],
+            "min": [
+                0.0009999871253967286,
+                0.0009999275207519532
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 936,
+            "type": "SCALAR",
+            "max": [
+                196.0
+            ],
+            "min": [
+                0.0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 11328,
+            "uri": "Sock_LP_V2.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 2364,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2364,
+            "byteLength": 2364,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 4728,
+            "byteLength": 3152,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 7880,
+            "byteLength": 1576,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 9456,
+            "byteLength": 1872,
+            "target": 34963
+        }
+    ],
+    "materials": [
+        {
+            "name": "DefaultMaterial"
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Cube.001",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 4,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TANGENT": 2,
+                        "TEXCOORD_0": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Sock_LP",
+            "mesh": 0
+        }
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "scene": 0
+}
