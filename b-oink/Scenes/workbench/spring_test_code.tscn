@@ -29,7 +29,7 @@ anchor_b = NodePath("../butt/butt_anker")
 script = ExtResource("1_josfd")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="head"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6401558, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 shape = SubResource("CylinderShape3D_fkjml")
 
 [node name="head_anker" type="Marker3D" parent="head"]
@@ -42,7 +42,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.2
 script = ExtResource("5_nqheu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="butt"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4135904, 1.6793196, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.414, 1.6, 0)
 shape = SubResource("CylinderShape3D_1fw2g")
 
 [node name="butt_anker" type="Marker3D" parent="butt"]

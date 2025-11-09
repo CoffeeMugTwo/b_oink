@@ -5,10 +5,10 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
 @export var spring_force : Vector3 = Vector3(0, 0 ,0)
-@export var max_input_force_scalar : float = 10.0
-@export var mass : float = 1.0
-@export var jump_force_scalar : float = 600
-@export var max_grab_distance : float = 0.5
+@export var max_input_force_scalar : float = 50.0
+@export var mass : float = 1.3
+@export var jump_force_scalar : float = 330
+@export var max_grab_distance : float = 0.7
 
 func _can_grab() -> bool:
 	var space_state = get_world_3d().direct_space_state
@@ -39,7 +39,7 @@ func _update_velocity(delta: float) -> void:
 	if Input.is_action_pressed("p1_left"):
 		current_force_vector += Vector3(-1, 0, 0) * max_input_force_scalar
 		
-	if Input.is_action_just_pressed("p1_jump") and is_on_floor():
+	if Input.is_action_pressed("p1_jump") and is_on_floor():
 		current_force_vector += Vector3(0, 1, 0) * jump_force_scalar
 		
 		
@@ -52,7 +52,7 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity += get_gravity() * delta 
 
 	_update_velocity(delta)
 	
