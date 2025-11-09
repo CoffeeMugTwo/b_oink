@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://co63x414sibia"]
+
+[ext_resource type="Texture2D" uid="uid://bpwa0r511dtaf" path="res://Art/Textures/Vent/Vent_DefaultMaterial_BaseMap.png" id="1_3xhg6"]
+[ext_resource type="Texture2D" uid="uid://jvyumv7dxb2n" path="res://Art/Textures/Vent/Vent_DefaultMaterial_Normal.png" id="2_nho6o"]
+[ext_resource type="Texture2D" uid="uid://bfmvm1xk0g4po" path="res://Art/Textures/Vent/Vent_DefaultMaterial_MaskMap.png" id="3_hm2qr"]
+
+[resource]
+albedo_texture = ExtResource("1_3xhg6")
+orm_texture = ExtResource("3_hm2qr")
+normal_enabled = true
+normal_texture = ExtResource("2_nho6o")
