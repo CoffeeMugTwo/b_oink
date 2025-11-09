@@ -1,0 +1,9 @@
+[gd_resource type="ORMMaterial3D" load_steps=3 format=3 uid="uid://c4et4mo4mc55s"]
+
+[ext_resource type="Texture2D" uid="uid://l3y6poqg44h2" path="res://Art/Textures/Jengaturm/Jengaturm_LP_DefaultMaterial_BaseMap.png" id="1_wsba7"]
+[ext_resource type="Texture2D" uid="uid://b71x25x03wiy1" path="res://Art/Textures/Jengaturm/Jengaturm_LP_DefaultMaterial_Normal.png" id="2_e72sn"]
+
+[resource]
+albedo_texture = ExtResource("1_wsba7")
+normal_enabled = true
+normal_texture = ExtResource("2_e72sn")
